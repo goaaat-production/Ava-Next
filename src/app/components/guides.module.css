@@ -1,0 +1,8 @@
+.wrapper{
+    width: 100vw;
+    height: fit-content;
+    min-height: 4rem;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
