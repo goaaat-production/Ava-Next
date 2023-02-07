@@ -1,4 +1,4 @@
-import styles from '../components/choix.module.css'
+import styles from '../styles/choix.module.css'
 
 function Choix(props){
 

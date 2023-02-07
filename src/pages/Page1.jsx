@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Dialogue from '../app/components/Dialogues'
-import styles from '../app/components/page1.module.css'
+import styles from '../app/styles/page1.module.css'
 import Guide from '../app/components/Guides'
 import Choix from '../app/components/Choix'
 
