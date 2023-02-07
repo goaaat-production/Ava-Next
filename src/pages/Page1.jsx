@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from "next/link"
 import Dialogue from '../app/components/Dialogues'
 import styles from '../app/styles/page1.module.css'
 import Guide from '../app/components/Guides'
@@ -27,7 +28,8 @@ function Page1(){
                 "></Dialogue>
                 
                 <Choix shown={isLastPhrase}
-                    contenus="Choix numéro 1/Choix numéro 2/Choix numéro 3"                    
+                    contenus="Choix numéro 1/Choix numéro 2/Choix numéro 3"
+                    links="/Page2|/Page3|/Page4"                  
                 ></Choix>
 
                 <Guide contenu="Parlez au capitaine"></Guide>
