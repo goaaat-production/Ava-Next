@@ -32,7 +32,9 @@ function Page3(){
                 
                 <Choix shown={isLastPhrase}
                     contenus="Mettre un form ici"
-                    liens="./3"                  
+                    liens={[
+                        { href: "./[id]", as: "./3" },                        
+                        ]}                    
                 ></Choix>
             </section>
             

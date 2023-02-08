@@ -6,26 +6,28 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page12(){
+function Page14(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
     return(
         <>  
             <section className={styles.page}>
-                <Guide contenu="Diriges toi vers la statue “Mozart Expirant”, elle pourra t’aider."></Guide>
-
                 <img className={styles.tableau} src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
-                
-                <Choix shown={true}
-                    contenus="J'y suis"
-                    liens="./2"                  
-                ></Choix>
+                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                    :Mozart : Il est vrai …. même si vous avez oublié de compter mes orteils !/
 
+                    :Mozart : Mais, puisque vous êtes là, vous pouvez écrire ma symphonie, ça commence comme ça...
+                "></Dialogue>
+                
+                <Choix shown={isLastPhrase}
+                    contenus="Stop Mozart, qu’est-ce que vous faites ?/Je suis désolé mais il va me falloir ce fauteuil."
+                    liens="./5|./5"                  
+                ></Choix>
             </section>
             
         </>
     )
 }
 
-export default Page12;
+export default Page14;

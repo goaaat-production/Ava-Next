@@ -8,7 +8,6 @@ import Choix from '../../../app/components/Choix'
 
 function Page2(){
 
-    let [isLastPhrase, setIsLastPhrase] = useState(false);
 
     return(
         <>  
@@ -19,7 +18,9 @@ function Page2(){
                 
                 <Choix shown={true}
                     contenus="J'y suis"
-                    liens="./2"                  
+                    liens={[
+                        { href: "./[id]", as: "./2" },                        
+                        ]}                  
                 ></Choix>
 
             </section>

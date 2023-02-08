@@ -5,7 +5,10 @@ function index(){
     return(
         <>
             <h1>Menu</h1>
-            <Choix shown="true" contenus="Jouer/Crédits" liens="./chapitres/intro/1|/credits"></Choix>
+            <Choix shown="true" contenus="Jouer/Crédits" liens={[
+            { href: "/chapitres/intro/[id]", as: "/chapitres/intro/1" },
+            { href: "/credits" },
+            ]}></Choix>
         </>
 
     )

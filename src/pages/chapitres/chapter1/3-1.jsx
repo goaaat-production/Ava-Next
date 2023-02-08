@@ -25,7 +25,6 @@ function Page8(){
 
                     :Capitaine : Il nous faut un objet qui pourrait secourir mes hommes...
 
-
                 "></Dialogue>
                 
                 <Choix shown={isLastPhrase}
