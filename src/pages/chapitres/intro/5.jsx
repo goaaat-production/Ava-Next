@@ -15,7 +15,7 @@ function Page5(){
             <section className={styles.page}>
                 <img className={styles.tableau} src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Capitaine : Tant pis ! On a besoin de toi ICI !/
+                    :Capitaine : Peut importe, on a besoin de toi ICI !/
 
                     :Capitaine : Va chercher dans les autres tableaux, VITE !
                 "></Dialogue>
