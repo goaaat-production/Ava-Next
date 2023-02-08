@@ -6,26 +6,24 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page2(){
+function Page10(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
     return(
         <>  
             <section className={styles.page}>
-                <Guide contenu="Dirigez vous vers lincendie-du-steamer-austria"></Guide>
-
-                <img className={styles.tableau} src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
+                <img className={styles.tableau} src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
+                <h1>LE JEU</h1>
                 
                 <Choix shown={true}
-                    contenus="J'y suis"
-                    liens="./2"                  
+                    contenus="Fin du jeu"
+                    liens="./5"              
                 ></Choix>
-
             </section>
             
         </>
     )
 }
 
-export default Page2;
+export default Page10;

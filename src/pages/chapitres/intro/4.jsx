@@ -6,7 +6,7 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page3(){
+function Page4(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
@@ -15,29 +15,21 @@ function Page3(){
             <section className={styles.page}>
                 <img className={styles.tableau} src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Matelot : Le pont est en feu !/ 
+                    :Capitaine : Alors aide nous plûtot !/ 
 
-                    :Capitaine : Jetez les canaux à l’eau ! Les femmes et les enfants d’abord !/
-
-                    :Matelot : Capitaine, le feu se propage !/ 
-
-                    :Capitaine : Éteignez-moi ce feu !/
-
-                    :Capitaine : Il nous faut plus de monde pour nous aider !!!/
-
-                    :Capitaine : Toi là bas !/
-
-                    :Capitaine : Que est ton nom ?
+                    :Capitaine : Va chercher de quoi nous secourir chez les autres tableaux.
                 "></Dialogue>
                 
                 <Choix shown={isLastPhrase}
-                    contenus="Mettre un form ici"
-                    liens="./3"                  
+                    contenus="C'est d'accord/J'ai la flemme un peu..."
+                    liens="../chapter1/1|./5"                  
                 ></Choix>
+
+                <Guide contenu="Parlez au capitaine"></Guide>
             </section>
             
         </>
     )
 }
 
-export default Page3;
+export default Page4;

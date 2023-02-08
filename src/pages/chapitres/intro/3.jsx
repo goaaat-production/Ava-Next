@@ -15,25 +15,17 @@ function Page3(){
             <section className={styles.page}>
                 <img className={styles.tableau} src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Matelot : Le pont est en feu !/ 
+                    :Capitaine : PRENOM ? Original.../
 
-                    :Capitaine : Jetez les canaux à l’eau ! Les femmes et les enfants d’abord !/
-
-                    :Matelot : Capitaine, le feu se propage !/ 
-
-                    :Capitaine : Éteignez-moi ce feu !/
-
-                    :Capitaine : Il nous faut plus de monde pour nous aider !!!/
-
-                    :Capitaine : Toi là bas !/
-
-                    :Capitaine : Que est ton nom ?
+                    :Capitaine : Qu'est-ce que tu fait là ?
                 "></Dialogue>
                 
                 <Choix shown={isLastPhrase}
-                    contenus="Mettre un form ici"
-                    liens="./3"                  
+                    contenus="Je vous regarde/Rien, je ne fait pas partie du navire..."
+                    liens="./4|./4"                  
                 ></Choix>
+
+                <Guide contenu="Parlez au capitaine"></Guide>
             </section>
             
         </>
