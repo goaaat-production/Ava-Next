@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Choix(props){
 
     let contenus = props.contenus.split('/')
-    let liens = props.links.split("|")
+    let liens = props.liens.split("|")
 
     return(
         <>
