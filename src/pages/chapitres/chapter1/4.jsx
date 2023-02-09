@@ -25,7 +25,7 @@ function clickOnRibbon(){
 
     return(
         <>  
-            <section className=page >
+            <section className="page" >
                 <div className={styles.container}>
                     <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau}/>
                         <div className={styles.boat} onClick={clickOnBoat}></div>
