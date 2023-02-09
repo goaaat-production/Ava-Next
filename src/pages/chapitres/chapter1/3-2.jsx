@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
-import styles from '../../../app/styles/page1.module.css'
+import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
@@ -12,8 +12,8 @@ function Page9(){
 
     return(
         <>  
-            <section className={styles.page}>
-                <img className={styles.tableau} src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
+            <section className="page">
+                <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Duchesse : Oh non, vous coulez ? Mais quelle tragédie !/
                     

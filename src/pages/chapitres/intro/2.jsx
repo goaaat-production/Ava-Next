@@ -1,19 +1,30 @@
-import { useState } from 'react';
+import { useState, useRef} from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
-import styles from '../../../app/styles/page1.module.css'
+import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import { useRouter } from 'next/router'
+
 
 
 function Page3(){
+    const router = useRouter()
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
+    let nameRef = useRef();
+    
+    const handleFormSubmit = () => {
+        localStorage.setItem('nom',  nameRef.current.value);
+        router.push('./3')
+    }
+
+
     return(
         <>  
-            <section className={styles.page}>
-                <img className={styles.tableau} src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
+            <section className="page">
+                <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Matelot : Le pont est en feu !/ 
 
@@ -30,12 +41,12 @@ function Page3(){
                     :Capitaine : Que est ton nom ?
                 "></Dialogue>
                 
-                <Choix shown={isLastPhrase}
-                    contenus="Mettre un form ici"
-                    liens={[
-                        { href: "./[id]", as: "./3" },                        
-                        ]}                    
-                ></Choix>
+
+                <section className={(isLastPhrase ? "wrapper" : `${"wrapper"} ${"hidden"}`)}>
+                    <label htmlFor="nom">Nom</label>
+                    <input ref={nameRef} id="nom" type="text" />
+                    <button onClick={handleFormSubmit}>Valider</button>
+                </section>
             </section>
             
         </>

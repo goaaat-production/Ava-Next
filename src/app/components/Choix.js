@@ -1,10 +1,9 @@
-import styles from '../styles/choix.module.css'
+import styles from '../styles/components/choix.module.css'
 import Link from 'next/link'
 
 function Choix(props){
 
     let contenus = props.contenus.split('/')
-    console.log(props.liens[0]["href"] + (props.liens[0]["as"] ? props.liens[0]["as"] : ""))            
 
 
     return(

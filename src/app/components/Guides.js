@@ -1,10 +1,11 @@
-import styles from '../styles/guides.module.css'
+import styles from '../styles/components/guides.module.css'
 
 function Guide(props){
     return(
         <>
             <section className={styles.wrapper}>
-                <h4>{props.contenu}</h4>
+                <section className={styles.circle}></section>
+                <h4 className={styles.contenu}>{props.contenu}</h4>
             </section>
         </>
     )

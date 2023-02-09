@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../styles/dialogues.module.css'
+import styles from '../styles/components/dialogues.module.css'
 
 function Dialogue(props){
     

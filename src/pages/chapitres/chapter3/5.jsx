@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
-import styles from '../../../app/styles/page1.module.css'
+import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
@@ -10,19 +10,21 @@ function Page20(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
+    let [prenom, setPrenom] = useState("prénom");
+
+
+    useEffect(() => {
+        // Perform localStorage action
+        setPrenom(localStorage.getItem("nom"))
+        console.log(prenom);
+
+    }, [])
+
     return(
         <>  
-            <section className={styles.page}>
-            <img className={styles.tableau} src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Titien : MAGNIFICO !!!/
-                    
-                    :Titien : C’est le plus de tous les tableaux que je n’ai jamais vu !! Prends mon pinceau, tu en es digne !/
-
-                    :Capitaine : PRENOM ! T'as récupéré le pinceau ? Parfait !/
-
-                    :Capitaine : On a tout ce qu'il faut, ramène toi au navire !
-                "></Dialogue>
+            <section className="page">
+            <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : MAGNIFICO !!!/ :Titien : C’est le plus de tous les tableaux que je n’ai jamais vu !! Prends mon pinceau, tu en es digne !/ :Capitaine : " + prenom + " ! T'as récupéré le pinceau ? Parfait !/ :Capitaine : On a tout ce qu'il faut, ramène toi au navire !"}></Dialogue>
                 
                 <Choix shown={isLastPhrase}
                     contenus="J'y vais"

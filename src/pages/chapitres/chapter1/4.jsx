@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
 import styles from '../../../app/styles/game1.module.css'
+import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
@@ -24,13 +25,14 @@ function clickOnRibbon(){
 
     return(
         <>  
-            <section className={styles.page} >
+            <section className=page >
                 <div className={styles.container}>
                     <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau}/>
                         <div className={styles.boat} onClick={clickOnBoat}></div>
                         <div className={styles.men} onClick={clickOnMen}></div>
                         <div className={styles.ribbon} onClick={clickOnRibbon}></div>
                 </div>
+            
                 
                 <Choix shown={true}
                     contenus="Fin du jeu"
