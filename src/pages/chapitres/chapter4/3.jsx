@@ -6,7 +6,7 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page3(){
+function Page23(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
     let [prenom, setPrenom] = useState("prénom");
@@ -18,27 +18,25 @@ function Page3(){
         console.log(prenom);
 
     }, [])
-    
 
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : "+ prenom + " ? Original.../ :Capitaine : Qu'est-ce que tu fait là ?"}></Dialogue>
+                <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : l incendie du steamer austria'></img>
                 
+                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : Ca y est ?! On est sauvés ?/ :Matelot : Hourra !!! On est sauvés !/ :Capitaine : Merci à toi " + prenom + " ! Bon vent moussaillon !"}></Dialogue>
+
                 <Choix shown={isLastPhrase}
-                    contenus="Je vous regarde/Rien, je ne fait pas partie du navire..."
+                    contenus="La bise capitaine"
                     liens={[
-                        { href: "./[id]", as: "./4" },
-                        { href: "./[id]", as: "./4" },                        
-                        ]}                    
+                        { href: "../outro/[id]", as: "../outro/1" },
+                        ]}   
                 ></Choix>
 
-                <Guide contenu="Parlez au capitaine"></Guide>
             </section>
             
         </>
     )
 }
 
-export default Page3;
+export default Page23;

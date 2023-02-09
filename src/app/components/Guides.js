@@ -1,4 +1,4 @@
-import styles from '../styles/guides.module.css'
+import styles from '../styles/components/guides.module.css'
 
 function Guide(props){
     return(

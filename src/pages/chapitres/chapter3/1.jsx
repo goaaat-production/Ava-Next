@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
-import styles from '../../../app/styles/page1.module.css'
+import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
@@ -12,10 +12,10 @@ function Page16(){
 
     return(
         <>  
-            <section className={styles.page}>
+            <section className="page">
                 <Guide contenu="Dirigez-vous vers “CHARLES QUINT RAMASSANT LE PINCEAU DE TITIEN”, le capitaine en a besoin.."></Guide>
 
-                <img className={styles.tableau} src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Tableau : charles-quint-ramassant-le-pinceau-de-titien'></img>
+                <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Tableau : charles-quint-ramassant-le-pinceau-de-titien'></img>
                 
                 <Choix shown={true}
                     contenus="J'y suis"
