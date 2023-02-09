@@ -6,7 +6,7 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page14(){
+function Page18(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
@@ -15,17 +15,16 @@ function Page14(){
             <section className={styles.page}>
             <img className={styles.tableau} src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Mozart : Mon fauteuil ? Ne voyez-vous donc pas que je suis en train d’écrire ma dernière symphonie ?/
-
-                    :Mozart : Enfin, de toute façon, regardez mes doigts, je ne la finirai pas, il ne m’en reste plus que 1, 2, 3…
+                    :Titien : Mon pinceau se mérite !/
+                    
+                    :Titien : Je n’accepterai de le céder qu’à celui qui réalisera le plus beau tableau de moi.
                 "></Dialogue>
                 
                 <Choix shown={isLastPhrase}
-                    contenus="10 comme tout le monde !?/Oooh il en manque 2, vous en avez plus que 8..."
+                    contenus="Commencer à peindre"
                     liens={[
-                        { href: "./[id]", as: "./4-1" },
-                        { href: "./[id]", as: "./4-2" },
-                        ]}                    
+                        { href: "./[id]", as: "./4" },
+                        ]}                     
                 ></Choix>
             </section>
             
@@ -33,4 +32,4 @@ function Page14(){
     )
 }
 
-export default Page14;
+export default Page18;

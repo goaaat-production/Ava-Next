@@ -22,7 +22,10 @@ function Page14(){
                 
                 <Choix shown={isLastPhrase}
                     contenus="Stop Mozart, qu’est-ce que vous faites ?/Je suis désolé mais il va me falloir ce fauteuil."
-                    liens="./5|./5"                  
+                    liens={[
+                        { href: "./[id]", as: "./5" },
+                        { href: "./[id]", as: "./5" },
+                        ]}                   
                 ></Choix>
             </section>
             

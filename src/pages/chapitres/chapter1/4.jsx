@@ -18,7 +18,9 @@ function Page10(){
                 
                 <Choix shown={true}
                     contenus="Fin du jeu"
-                    liens="./5"              
+                    liens={[
+                        { href: "./[id]", as: "./5" },
+                        ]}                      
                 ></Choix>
             </section>
             

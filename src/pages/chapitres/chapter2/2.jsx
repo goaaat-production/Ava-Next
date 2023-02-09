@@ -22,7 +22,10 @@ function Page13(){
                 
                 <Choix shown={isLastPhrase}
                     contenus="J’ai besoin de quelque chose de lourd, je peux vous emprunter votre fauteuil ?/J’ai besoin de quelque chose de lourd et le capitaine a dit que vous étiez lourd"
-                    liens="./3|./3"                  
+                    liens={[
+                        { href: "./[id]", as: "./3" },
+                        { href: "./[id]", as: "./3" },
+                        ]}                     
                 ></Choix>
             </section>
             

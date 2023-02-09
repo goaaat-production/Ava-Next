@@ -19,7 +19,9 @@ function Page1(){
                 
                 <Choix shown={true}
                     contenus="J'y suis"
-                    liens="./2"                  
+                    liens={[
+                        { href: "./[id]", as: "./2" },
+                        ]}                         
                 ></Choix>
 
             </section>

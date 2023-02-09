@@ -22,7 +22,10 @@ function Page5(){
                 
                 <Choix shown={isLastPhrase}
                     contenus="C'est d'accord/..."
-                    liens="../chapter1/1|../chapter1/1"                  
+                    liens={[
+                        { href: "../chapter1/[id]", as: "../chapter1/1" },
+                        { href: "../chapter1/[id]", as: "../chapter1/1" },                        
+                        ]}                                
                 ></Choix>
 
                 <Guide contenu="Parlez au capitaine"></Guide>

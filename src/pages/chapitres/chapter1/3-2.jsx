@@ -26,7 +26,9 @@ function Page9(){
                 
                 <Choix shown={isLastPhrase}
                     contenus="Cherchons le"
-                    liens="./4"              
+                    liens={[
+                        { href: "./[id]", as: "./4" },
+                        ]}                      
                 ></Choix>
             </section>
             

@@ -6,21 +6,21 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page12(){
+function Page22(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
     return(
         <>  
             <section className={styles.page}>
-                <Guide contenu="Diriges toi vers la statue “Mozart Expirant”, elle pourra t’aider."></Guide>
+                <Guide contenu="Jeu DragAndDrop"></Guide>
 
-                <img className={styles.tableau} src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                <img className={styles.tableau} src='../../lincendie-du-steamer-austria.png' alt='Tableau : l incendie du steamer austria'></img>
                 
                 <Choix shown={true}
-                    contenus="J'y suis"
+                    contenus="DRAG AND DROP GAGNÉ"
                     liens={[
-                        { href: "./[id]", as: "./2" },
+                        { href: "./[id]", as: "./3" },
                         ]}   
                 ></Choix>
 
@@ -30,4 +30,4 @@ function Page12(){
     )
 }
 
-export default Page12;
+export default Page22;

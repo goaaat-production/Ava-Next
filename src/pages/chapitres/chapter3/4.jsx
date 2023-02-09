@@ -6,28 +6,27 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page12(){
+function Page19(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
     return(
         <>  
             <section className={styles.page}>
-                <Guide contenu="Diriges toi vers la statue “Mozart Expirant”, elle pourra t’aider."></Guide>
-
                 <img className={styles.tableau} src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                <Guide contenu="ici ça peint"></Guide>
+
                 
                 <Choix shown={true}
-                    contenus="J'y suis"
+                    contenus="Jeu peinture"
                     liens={[
-                        { href: "./[id]", as: "./2" },
-                        ]}   
+                        { href: "./[id]", as: "./5" },
+                        ]}                     
                 ></Choix>
-
             </section>
             
         </>
     )
 }
 
-export default Page12;
+export default Page19;

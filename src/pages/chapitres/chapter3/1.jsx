@@ -6,16 +6,16 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page12(){
+function Page16(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
     return(
         <>  
             <section className={styles.page}>
-                <Guide contenu="Diriges toi vers la statue “Mozart Expirant”, elle pourra t’aider."></Guide>
+                <Guide contenu="Dirigez-vous vers “CHARLES QUINT RAMASSANT LE PINCEAU DE TITIEN”, le capitaine en a besoin.."></Guide>
 
-                <img className={styles.tableau} src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                <img className={styles.tableau} src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Tableau : charles-quint-ramassant-le-pinceau-de-titien'></img>
                 
                 <Choix shown={true}
                     contenus="J'y suis"
@@ -30,4 +30,4 @@ function Page12(){
     )
 }
 
-export default Page12;
+export default Page16;

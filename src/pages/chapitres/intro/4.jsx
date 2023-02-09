@@ -22,7 +22,10 @@ function Page4(){
                 
                 <Choix shown={isLastPhrase}
                     contenus="C'est d'accord/J'ai la flemme un peu..."
-                    liens="../chapter1/1|./5"                  
+                    liens={[
+                        { href: "../chapter1/[id]", as: "../chapter1/1" },
+                        { href: "./[id]", as: "./5" },                        
+                        ]}                  
                 ></Choix>
 
                 <Guide contenu="Parlez au capitaine"></Guide>
