@@ -4,7 +4,8 @@ function Guide(props){
     return(
         <>
             <section className={styles.wrapper}>
-                <h4>{props.contenu}</h4>
+                <section className={styles.circle}></section>
+                <h4 className={styles.contenu}>{props.contenu}</h4>
             </section>
         </>
     )

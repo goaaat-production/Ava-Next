@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Typewriter";
+    src: url("../../../public/JMHTypewriterDry.otf");
+}
+
+html, body{
+    margin: 0;
+    font-family: 'Typewriter';
+}
+
+a{
+    
+}

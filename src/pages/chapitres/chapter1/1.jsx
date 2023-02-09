@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
-import '../../../app/styles/dialoguePage.css'
+import '../../../app/styles/directionPage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
@@ -13,9 +13,11 @@ function Page1(){
     return(
         <>  
             <section className="page">
-                <Guide contenu="Diriges toi vers le tableau “EMBARQUEMENT DE LA DUCHESSE D’ANGOULÊME À PAUILLAC”, elle pourra t’aider."></Guide>
+                <Guide contenu="Diriges toi vers le tableau “EMBARQUEMENT DE LA DUCHESSE D’ANGOULÊME À PAUILLAC”"></Guide>
 
-                <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : incendie-du-steamer-austria'></img>
+                <section className='cadre'>
+                    <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : incendie-du-steamer-austria'></img>
+                </section>
                 
                 <Choix shown={true}
                     contenus="J'y suis"
