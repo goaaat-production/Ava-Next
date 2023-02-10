@@ -6,6 +6,7 @@
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .hidden{
