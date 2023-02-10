@@ -33,13 +33,19 @@ function Page10() {
         <>
             <section className="page" >
                 <div className={styles.container}>
-                        <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className='tableau' />
+                    <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className='tableau' />
                     <div className={styles.boat} onClick={clickOnBoat}></div>
                     <div className={styles.men} onClick={clickOnMen}></div>
                     <div className={styles.ribbon} onClick={clickOnRibbon}></div>
                 </div>
 
                 <div className="container">
+                    {clickedObject === "" &&
+                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
+                :Capitaine : Trouve moi un objet qui
+                pourrait secourir mes hommes.
+            "></Dialogue>}
+
 
                     {clickedObject === "bateau" &&
                         <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
@@ -57,6 +63,19 @@ function Page10() {
                 </div>
 
 
+                <div className='container'>
+                    <p className='consigne'>
+                        {clickedObject === "" &&
+                           "Appuyez sur les zones indiquées du tableau"}
+                        {clickedObject === "bateau" &&
+                           "Réessayez"}
+                        {clickedObject === "hommes" &&
+                           "Réessayez"}
+                        {clickedObject === "ruban"&&
+                           ""}
+
+                    </p>
+                </div>
                 {clickedObject === "ruban" &&
                     <Choix shown={true}
                         contenus="Suivant"
