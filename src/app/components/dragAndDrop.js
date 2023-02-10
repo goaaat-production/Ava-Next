@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useDrop } from 'react-dnd';
 import { useDrag } from 'react-dnd';
 import styles from '../styles/components/dragAndDrop.module.css'
+import Dialogue from './Dialogues';
 const ItemList = [
     {
         id: 1,
@@ -18,11 +19,68 @@ const ItemList = [
         url: "https://www.facebook.com/images/fb_icon_325x325.png"
     }
 ]
+var NombreObjet = 0;
+
+var Board1reussi = true
+var Board2reussi = true
+var Board3reussi = true
+var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
+
 export const generatePreview = ({itemType, item, style}) => {
     return <div  style={style}>{itemType}</div>
   } 
+function Gagné(){
+    console.log('Vous avez gagné')
+}
+
+function removeObjectWithId(arr, id) {
+    const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
+  
+    if (objWithIdIndex > -1) {
+      arr.splice(objWithIdIndex, 1);
+    }
+  
+    return arr;
+  }
+  
+
+
 
 function DragAndDrop() {
+
+    let [isLastPhrase, setIsLastPhrase] = useState(false);
+
+
+    function DialogueCapitaine(itemId,boardId) {
+        if (itemId === 3 & boardId === 1) {
+            return(
+            ":Capitaine : Exactement ! ")
+        }
+        else if (itemId === 1 & boardId === 2) {
+            return(
+            ":Capitaine : Oui ! ")
+        }
+        else if (itemId === 2 & boardId === 3) {
+            return(
+            ":Capitaine : Bravo !")
+        }
+
+
+        else if (itemId === 3 & boardId !== 1) {
+            return(
+            ":Capitaine : Noon ! On a besoin de poid à tribord !  ")
+        }
+        else if (itemId === 2 & boardId !== 3) {
+            return(
+            ":Capitaine : Pas ici ! Le pinceau peut nous aider à éteindre les flammes... ")
+        }
+        else if (itemId === 1 & boardId !== 2){
+            return(
+            ":Capitaine : Non pas là ! On a besoin du ruban à l'avant du bâteau pour récuperer les noyés")
+        }
+    }
+    
+
 
 
 
@@ -64,19 +122,60 @@ function DragAndDrop() {
 
     const AddImageToBoard = (itemId, boardId) => {
         const pictureList = ItemList.filter((item) => itemId === item.id); // récupère l'objet de l'ID = itemId
-        console.log("itemId : ", itemId, " boardId : ", boardId);
-        if (itemId === 1 & boardId === 1) {
+        if (itemId === 3 & boardId === 1) {
             setBoard((board) => [...board, pictureList[0]]);
-            ItemList.splice(itemId - 1, 1, "")
+            removeObjectWithId(ItemList, itemId)
+            NombreObjet += 1;
+            DialogueCap = DialogueCapitaine(3,1)
         }
-        else if (itemId === 2 & boardId === 2) {
+        else if (itemId === 1 & boardId === 2) {
             setBoard2((board2) => [...board2, pictureList[0]]);
-            ItemList.splice(itemId - 1, 1, "")
+            removeObjectWithId(ItemList, itemId)
+            NombreObjet += 1;
+            DialogueCap = DialogueCapitaine(1,2)
         }
-        else if (itemId === 3 & boardId === 3) {
+        else if (itemId === 2 & boardId === 3) {
             setBoard3((board3) => [...board3, pictureList[0]]);
-            ItemList.splice(itemId - 1, 1, "")
+            removeObjectWithId(ItemList, itemId)
+            NombreObjet += 1;
+            DialogueCap = DialogueCapitaine(2,3)
         }
+        else if (itemId === 3 & boardId !== 1) {
+
+            
+            if (boardId===2) {
+                Board2reussi =false
+                DialogueCap = DialogueCapitaine(3,1)
+            }
+            else if (boardId===3) {
+                Board3reussi =false
+                DialogueCap = DialogueCapitaine(3,3)
+            }
+        }
+        else if (itemId === 2 & boardId !== 3) {
+                        if (boardId===2) {
+                Board2reussi =false
+                DialogueCap = DialogueCapitaine(2,2)
+            }
+            else if (boardId===1) {
+                Board1reussi =false
+                DialogueCap = DialogueCapitaine(2,1)
+            }
+
+        }
+        else if (itemId === 1 & boardId !== 2) {
+
+
+            if (boardId===1) {
+                Board1reussi =false
+                DialogueCap = DialogueCapitaine(1,1)
+            }
+            else if (boardId===3) {
+                Board3reussi =false
+                DialogueCap = DialogueCapitaine(1,3)
+            }
+        }
+
 
         console.log("ItemList = ", ItemList)
     }
@@ -95,7 +194,7 @@ function DragAndDrop() {
             <div className={styles.content}>
                 <div className={styles.boards}>
                     <img src='/lincendie-du-steamer-austria.png'></img>
-                    <div className={styles.board1} ref={drop} style={{
+                    <div id= "board1" className={`${styles.board1} ${(!Board1reussi? styles.Shaking : '')}`} ref={drop} style={{
                         backgroundColor: isOver? "yellow" : "white",
                         opacity:'40%'
                     }} >   
@@ -106,7 +205,7 @@ function DragAndDrop() {
     
 
                     
-                    <div className={styles.board2} ref={drop2} style={{
+                    <div id= "board2" className={`${styles.board2} ${(!Board2reussi? styles.Shaking : '')}`} ref={drop2} style={{
                         backgroundColor: isOver2? "yellow" : "white",
                         opacity:'40%'
                     }} >   
@@ -114,7 +213,7 @@ function DragAndDrop() {
                             return <ItemsDND key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
-                    <div className={styles.board3} ref={drop3} style={{
+                    <div id= "board3" className={`${styles.board3} ${(!Board3reussi? styles.Shaking : '')}`} ref={drop3} style={{
                         backgroundColor: isOver3? "yellow" : "white",
                         opacity:'40%'
                     }} >   
@@ -128,6 +227,15 @@ function DragAndDrop() {
                     {ItemList.map((item) => {
                         return <ItemsDND key={item.id} url={item.url} id={item.id} />
                     })}
+                </div>
+
+                <div>
+                    {
+                        (NombreObjet === 3 ? Gagné() : null)
+                    }
+                </div>
+                <div>
+                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>
                 </div>
             </div>
 
