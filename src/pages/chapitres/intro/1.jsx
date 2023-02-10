@@ -27,7 +27,6 @@ function Page2(){
                 ></Choix>
 
             </section>
-            
         </>
     )
 }

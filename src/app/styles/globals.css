@@ -8,6 +8,10 @@ html, body{
     font-family: 'Typewriter';
 }
 
-a{
-    
+.texture{
+    position: absolute;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../../public/texture.png");
 }
