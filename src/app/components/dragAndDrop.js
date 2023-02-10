@@ -8,15 +8,15 @@ import Dialogue from './Dialogues';
 const ItemList = [
     {
         id: 1,
-        url: "https://www.facebook.com/images/fb_icon_325x325.png"
+        url: "/objet1.png"
     },
     {
         id: 2,
-        url: "https://storage.googleapis.com/support-kms-prod/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK"
+        url: "/objet2.png"
     },
     {
         id: 3,
-        url: "https://www.facebook.com/images/fb_icon_325x325.png"
+        url: "/objet3.png"
     }
 ]
 var NombreObjet = 0;
@@ -24,6 +24,8 @@ var NombreObjet = 0;
 var Board1reussi = true
 var Board2reussi = true
 var Board3reussi = true
+
+
 var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
 
 export const generatePreview = ({itemType, item, style}) => {
@@ -44,7 +46,11 @@ function removeObjectWithId(arr, id) {
   }
   
 
-
+function IsFinish (array) {
+    if (array.length===1){
+        return true
+    }
+}
 
 function DragAndDrop() {
 
@@ -196,34 +202,31 @@ function DragAndDrop() {
                     <img src='/lincendie-du-steamer-austria.png'></img>
                     <div id= "board1" className={`${styles.board1} ${(!Board1reussi? styles.Shaking : '')}`} ref={drop} style={{
                         backgroundColor: isOver? "yellow" : "white",
-                        opacity:'40%'
+                        opacity: IsFinish(board)? '0%' : '40%'
                     }} >   
                         {board.map((item) => {
-                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
+                            return <ItemsDND styles="transition: none" key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
-    
-
-                    
                     <div id= "board2" className={`${styles.board2} ${(!Board2reussi? styles.Shaking : '')}`} ref={drop2} style={{
                         backgroundColor: isOver2? "yellow" : "white",
-                        opacity:'40%'
+                        opacity: IsFinish(board2)? '0%' : '40%'
                     }} >   
                         {board2.map((item) => {
-                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
+                            return <ItemsDND styles="transition: none" key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
                     <div id= "board3" className={`${styles.board3} ${(!Board3reussi? styles.Shaking : '')}`} ref={drop3} style={{
                         backgroundColor: isOver3? "yellow" : "white",
-                        opacity:'40%'
+                        opacity: IsFinish(board3)? '0%' : '40%'
                     }} >   
                     
                         {board3.map((item) => {
-                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
+                            return <ItemsDND styles="transition: none" key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
                 </div>
-                <div className={styles.item}>
+                <div className={styles.items}>
                     {ItemList.map((item) => {
                         return <ItemsDND key={item.id} url={item.url} id={item.id} />
                     })}
@@ -234,8 +237,8 @@ function DragAndDrop() {
                         (NombreObjet === 3 ? Gagné() : null)
                     }
                 </div>
-                <div>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>
+                <div className={styles.dialogue}>
+                <Dialogue  setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>
                 </div>
             </div>
 
