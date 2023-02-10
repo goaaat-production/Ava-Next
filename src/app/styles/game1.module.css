@@ -1,0 +1,46 @@
+.tableau{
+    width: 70vh;
+    height: 1;
+    z-index: -1;
+    
+}
+
+.container{
+    position: relative;
+}
+
+.boat{
+    height: 7vh;
+    width: 7vh;
+    background-color: #71A9BB;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 8vh;
+    left: 2vh;
+}
+
+.men{
+    height: 7vh;
+    width: 7vh;
+    background-color: #71A9BB;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 14vh;
+    left: 40vh;
+}
+
+.ribbon{
+    height: 7vh;
+    width: 7vh;
+    background-color: #71A9BB;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 7vh;
+    left: 53vh;
+}
