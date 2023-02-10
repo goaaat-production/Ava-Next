@@ -4,7 +4,7 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
-
+import PagePeinture from '../../../../src/app/components/PagePeindre'
 
 function Page19(){
 
@@ -13,7 +13,10 @@ function Page19(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                <PagePeinture/>
+                
+
+                {/* <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                 <Guide contenu="ici ça peint"></Guide>
 
                 
@@ -22,7 +25,7 @@ function Page19(){
                     liens={[
                         { href: "./[id]", as: "./5" },
                         ]}                     
-                ></Choix>
+                ></Choix> */}
             </section>
             
         </>

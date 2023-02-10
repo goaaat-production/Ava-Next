@@ -1,0 +1,53 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.boards {
+    position: relative;
+    width: 80vw;
+    height:70vw;
+}
+.boards > img {
+    width: 80vw;
+    top:10vw;
+    left:0px;
+    position: absolute;
+}
+.board1, .board2, .board3 {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 15vw;
+    height: 15vw;
+    background-color: rgba(255,255,255,40%);
+    border-radius: 50%;
+    /* animation: blinker 2s linear infinite; */
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.board1{
+    position: absolute;
+    left: 1.5%;
+    top:33vw;
+}
+.board2{
+    position: absolute;
+    left: 30%;
+    top:20vw;
+}
+.board3{
+    position: absolute;
+    right: 31%;
+    top:25vw;
+}
+
+.items {
+    width: 10vw;
+}
