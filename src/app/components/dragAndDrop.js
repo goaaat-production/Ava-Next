@@ -5,6 +5,7 @@ import { useDrop } from 'react-dnd';
 import { useDrag } from 'react-dnd';
 import styles from '../styles/components/dragAndDrop.module.css'
 import Dialogue from './Dialogues';
+import { Preview } from 'react-dnd-preview'
 const ItemList = [
     {
         id: 1,
@@ -26,11 +27,11 @@ var Board2reussi = true
 var Board3reussi = true
 
 
+var globalItemId = null
+
 var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
 
-export const generatePreview = ({itemType, item, style}) => {
-    return <div  style={style}>{itemType}</div>
-  } 
+
 function Gagné(){
     console.log('Vous avez gagné')
 }
@@ -52,7 +53,10 @@ function IsFinish (array) {
     }
 }
 
+
+
 function DragAndDrop() {
+
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
@@ -123,7 +127,7 @@ function DragAndDrop() {
     }))    
     
 
-
+    
 
 
     const AddImageToBoard = (itemId, boardId) => {
@@ -196,7 +200,8 @@ function DragAndDrop() {
 
 
     return (
-        <>
+        <> 
+        <Preview generator={generatePreview}/>
             <div className={styles.content}>
                 <div className={styles.boards}>
                     <img src='/lincendie-du-steamer-austria.png'></img>
@@ -205,7 +210,7 @@ function DragAndDrop() {
                         opacity: IsFinish(board)? '0%' : '40%'
                     }} >   
                         {board.map((item) => {
-                            return <ItemsDND styles="transition: none" key={item.id} url={item.url} id={item.id} />
+                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
                     <div id= "board2" className={`${styles.board2} ${(!Board2reussi? styles.Shaking : '')}`} ref={drop2} style={{
@@ -213,7 +218,10 @@ function DragAndDrop() {
                         opacity: IsFinish(board2)? '0%' : '40%'
                     }} >   
                         {board2.map((item) => {
-                            return <ItemsDND styles="transition: none" key={item.id} url={item.url} id={item.id} />
+                            const generatePreview = ({itemType, item, style}) => {
+                                return <div style={style}> <img src={item.url}></img></div>
+                              } 
+                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
                     <div id= "board3" className={`${styles.board3} ${(!Board3reussi? styles.Shaking : '')}`} ref={drop3} style={{
@@ -222,12 +230,18 @@ function DragAndDrop() {
                     }} >   
                     
                         {board3.map((item) => {
-                            return <ItemsDND styles="transition: none" key={item.id} url={item.url} id={item.id} />
+                                const generatePreview = ({itemType, item, style}) => {
+                                    return <div style={style}> <img src={item.url}></img></div>
+                                  } 
+                            return <ItemsDND  key={item.id} url={item.url} id={item.id} />
                         })}
                     </div>
                 </div>
                 <div className={styles.items}>
                     {ItemList.map((item) => {
+                        const generatePreview = ({itemType, item, style}) => {
+                            return <div style={style}> <img src={item.url}></img></div>
+                          } 
                         return <ItemsDND key={item.id} url={item.url} id={item.id} />
                     })}
                 </div>
