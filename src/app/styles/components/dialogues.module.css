@@ -29,7 +29,8 @@
     align-items: center;
     width: 100%;
     position: relative;
-    top: -4rem;
+    top: -6rem;
+    justify-content: center;
 }
 
 .bulleWrapper{
@@ -53,7 +54,7 @@
 .right{
     position: relative;
     z-index: 1;
-    left: -3.5rem;
+    left: -1.5rem;
 }
 
 .hidden{

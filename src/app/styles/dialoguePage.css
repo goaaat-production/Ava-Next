@@ -43,6 +43,7 @@ body{
     height: 10rem;
     justify-content: space-between;
     padding-bottom: 3rem;
+    margin-top: 4rem;
 }
 
 .wrapper-form button{
@@ -78,7 +79,7 @@ button{
     min-height: 3rem;
     font-family: 'Typewriter';
     background-size: cover;
-
+    margin-top: 3rem;
 }
 
 a{
@@ -92,7 +93,10 @@ a{
 
 .dialogue{
     width: 100%;
-    height: 25rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hidden{

@@ -6,3 +6,36 @@
     background-repeat: no-repeat;
     width: 100vw;
 }
+
+.fill{
+    width: 40%;
+}
+
+.objetsWrapper{
+    display: flex;
+    justify-content: space-evenly
+    
+}
+
+.objets{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100px;
+    border-style: dashed;
+    border-width: 4px;
+    margin-top: 1rem;
+    border-color: #D9C5AD;
+
+}
+
+.objet1{
+
+}
+
+.objet2{
+
+}
+
+.objet3{
+
+}
