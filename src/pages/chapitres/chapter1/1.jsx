@@ -6,6 +6,7 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
+
 function Page1(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);

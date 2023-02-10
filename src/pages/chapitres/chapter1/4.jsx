@@ -5,6 +5,8 @@ import styles from '../../../app/styles/game1.module.css'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page10() {
@@ -29,7 +31,9 @@ function Page10() {
         <>
             <section className="page" >
                 <div className={styles.container}>
-                    <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau} />
+                    <section className='cadre'>
+                        <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau} />
+                    </section>
                     <div className={styles.boat} onClick={clickOnBoat}></div>
                     <div className={styles.men} onClick={clickOnMen}></div>
                     <div className={styles.ribbon} onClick={clickOnRibbon}></div>

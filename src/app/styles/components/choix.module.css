@@ -1,6 +1,9 @@
 .wrapper{
     display: flex;
     margin-bottom: 5rem;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .hidden{

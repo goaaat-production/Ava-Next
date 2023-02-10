@@ -4,6 +4,7 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
 import { useRouter } from 'next/router'
 
 
@@ -24,6 +25,9 @@ function Page3(){
     return(
         <>  
             <section className="page">
+
+                <Header></Header>
+
                 <section className='dialogue'>
                     <section className='cadre'>
                         <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
@@ -45,8 +49,8 @@ function Page3(){
                     "></Dialogue>
                 </section>
 
-                <section className={(isLastPhrase ? "wrapper" : `${"wrapper"} ${"hidden"}`)}>
-                    <label htmlFor="nom">Nom</label>
+                <section className={(isLastPhrase ? "wrapper-form" : `${"wrapper-form"} ${"hidden"}`)}>
+                    <label htmlFor="nom">Entrez votre nom :</label>
                     <input ref={nameRef} id="nom" type="text" />
                     <button onClick={handleFormSubmit}>Valider</button>
                 </section>

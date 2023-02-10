@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page11(){
@@ -13,8 +15,12 @@ function Page11(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
-                
+            <Header></Header>
+                <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
+                    </section>
+                </section>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : QUOI ?! Un ruban ?! C’est tout ce qu’elle avait à nous donner ?/
 

@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page4(){
@@ -13,12 +15,20 @@ function Page4(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Capitaine : Alors aide nous plûtot !/ 
 
-                    :Capitaine : Va chercher de quoi nous secourir chez les autres tableaux.
-                "></Dialogue>
+                <Header></Header>
+                
+                <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
+                    </section>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                        :Capitaine : Alors aide nous plûtot !/ 
+
+                        :Capitaine : Va chercher de quoi nous secourir chez les autres tableaux.
+                    "></Dialogue>
+                </section>
+                
                 
                 <Choix shown={isLastPhrase}
                     contenus="C'est d'accord/J'ai la flemme un peu..."
@@ -28,7 +38,6 @@ function Page4(){
                         ]}                  
                 ></Choix>
 
-                <Guide contenu="Parlez au capitaine"></Guide>
             </section>
             
         </>

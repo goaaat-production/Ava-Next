@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page7(){
@@ -13,7 +15,13 @@ function Page7(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
+
+            <Header></Header>
+
+            <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
+                    </section>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : Des gens sont tombés à l'eau... Il faut récuperer de quoi les secourir./
 
@@ -21,6 +29,7 @@ function Page7(){
 
                     :Duchesse : Plait-il ?
                 "></Dialogue>
+            </section>
                 
                 <Choix shown={isLastPhrase}
                     contenus="Hey, un bateau coule en face ! Aidez-moi !!/Bonjour, le bateau du capitaine prend feu. J’ai besoin de votre aide."
