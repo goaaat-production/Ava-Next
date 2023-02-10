@@ -8,7 +8,7 @@
     color: white;
     margin-top: 3rem;
     transform: rotate(359deg);
-
+    justify-content: center;
 }
 
 .contenu{

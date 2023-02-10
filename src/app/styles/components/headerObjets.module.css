@@ -13,8 +13,9 @@
 
 .objetsWrapper{
     display: flex;
-    justify-content: space-evenly
-    
+    justify-content: space-evenly;
+    max-width: 396px;
+    margin-left: 30%;
 }
 
 .objets{
