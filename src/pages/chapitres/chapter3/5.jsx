@@ -31,7 +31,7 @@ function Page20(){
                         <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
                     </section>
 
-                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : MAGNIFICO !!!/ :Titien : C’est le plus de tous les tableaux que je n’ai jamais vu !! Prends mon pinceau, tu en es digne !/ :Titien : " + prenom +" ? " + prenom +" ? Votre / :Capitaine : " + prenom + " ! T'as récupéré le pinceau ? Parfait !/ :Capitaine : On a tout ce qu'il faut, ramène toi au navire !"}></Dialogue>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : MAGNIFICO !!!/ :Titien : C’est le plus de tous les tableaux que je n’ai jamais vu !! Prends mon pinceau, tu en es digne !/ :Titien : Nous t’appèlerons" + prenom +" De Vinci, l’incomparable, l’unique " + prenom + "De Vinci. À toi la gloire amigo / :Capitaine : " + prenom + " ! T'as récupéré le pinceau ? Parfait !/ :Capitaine : On a tout ce qu'il faut, ramène toi au navire !"}></Dialogue>
 
                 </section>
 
