@@ -20,8 +20,7 @@ function Page11(){
                     <section className='cadre'>
                         <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
                     </section>
-                </section>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : QUOI ?! Un ruban ?! C’est tout ce qu’elle avait à nous donner ?/
 
                     :Capitaine : Bon, tant pis, on devrait pouvoir se débrouiller avec.../
@@ -30,6 +29,8 @@ function Page11(){
                     
                     :Capitaine : Vite ! On a besoin de contrepoids ! Va voir la statue là-bas, c’est grand et lourd.
                 "></Dialogue>
+                </section>
+                
                 
                 <Choix shown={isLastPhrase}
                     contenus="Cherchons Mozart"

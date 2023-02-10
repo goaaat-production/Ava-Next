@@ -29,9 +29,10 @@ function Page23(){
                     <section className='cadre'>
                         <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : l incendie du steamer austria'></img>
                     </section>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : Ca y est ?! On est sauvés ?/ :Matelot : Hourra !!! On est sauvés !/ :Capitaine : Merci à toi " + prenom + " ! Bon vent moussaillon !"}></Dialogue>
+
                 </section>
                 
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : Ca y est ?! On est sauvés ?/ :Matelot : Hourra !!! On est sauvés !/ :Capitaine : Merci à toi " + prenom + " ! Bon vent moussaillon !"}></Dialogue>
 
                 <Choix shown={isLastPhrase}
                     contenus="La bise capitaine"
