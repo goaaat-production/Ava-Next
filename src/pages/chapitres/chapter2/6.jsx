@@ -15,23 +15,27 @@ function Page15(){
     return(
         <>  
             <section className="page">
-                <Header objet1={true}></Header>
+                <Header objet1={true} objet2={true}></Header>
                 <section className='dialogue'>
                     <section className='cadre'>
                         <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                     </section>
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Mozart : Très bien, très bien, j'arrête.../
+                    :Capitaine : Tu as le fauteuil ? C'est parfait !/
 
-                    :Mozart : Aller, prenez mon fauteuil, mais je reste dessus, vous avez gagné le gros lot !
+                    :Capitaine : ça fera un très bon contrepoids/
+
+                    :Matelot : CAPITAINE !!! La passerelle est en feu !/
+
+                    :Capitaine : J’arrive ! Je sais comment faire mais j’ai besoin d’un pinceau ! Titien en a un ! Va le chercher !
                 "></Dialogue>
                 </section>
                 
                 
                 <Choix shown={isLastPhrase}
-                    contenus="Merci Mozart"
+                    contenus="J'y vais"
                     liens={[
-                        { href: "./[id]", as: "./6" },
+                        { href: "../chapter3/[id]", as: "../chapter3/1" },
                         ]}                   
                 ></Choix>
             </section>
@@ -41,3 +45,4 @@ function Page15(){
 }
 
 export default Page15;
+

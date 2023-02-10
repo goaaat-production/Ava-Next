@@ -21,7 +21,7 @@ function Page13(){
                         <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                     </section>
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Capitaine : C'est Mozart... Son fauteuil a l'air plutot lourd/
+                    :Capitaine : C'est Mozart... On a besoin de son fauteuil.../
 
                     :Mozart : Que voulez vous ?
                 "></Dialogue>
@@ -29,7 +29,7 @@ function Page13(){
                 
                 
                 <Choix shown={isLastPhrase}
-                    contenus="J’ai besoin de quelque chose de lourd, je peux vous emprunter votre fauteuil ?/J’ai besoin de quelque chose de lourd et le capitaine a dit que vous étiez lourd"
+                    contenus="Je peux vous emprunter votre fauteuil ?/Le capitaine a dit que vous étiez lourd"
                     liens={[
                         { href: "./[id]", as: "./3" },
                         { href: "./[id]", as: "./3" },

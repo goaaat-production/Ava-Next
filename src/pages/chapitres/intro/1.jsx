@@ -18,6 +18,8 @@ function Page2(){
                     <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
 
                 </section>
+
+                
                 
                 <Choix shown={true}
                     contenus="J'y suis"

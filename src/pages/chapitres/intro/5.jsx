@@ -25,9 +25,9 @@ function Page5(){
                     </section>
 
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Capitaine : Peut importe, on a besoin de toi ICI !/
+                    :Capitaine : J’en ai rien à faire !/
 
-                    :Capitaine : Va chercher dans les autres tableaux, VITE !
+                    :Capitaine : dirige toi vers les tableaux ! VITE !
                     "></Dialogue>
                 </section>
 
