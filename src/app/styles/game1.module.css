@@ -12,37 +12,37 @@
 }
 
 .boat{
-    height: 7vh;
-    width: 7vh;
+    height: 18%;
+    width: 14%;
     background-color: #71A9BB;
     mix-blend-mode: difference;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
-    top: 14vh;
-    left: 3vh;
+    top: 33%;
+    left: 5%;
 }
 
 .men{
-    height: 7vh;
-    width: 7vh;
+    height: 18%;
+    width: 14%;
     background-color: #71A9BB;
     mix-blend-mode: difference;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
-    top: 16vh;
-    left: 32vh;
+    top: 38%;
+    left: 58%;
 }
 
 .ribbon{
-    height: 7vh;
-    width: 7vh;
+    height: 18%;
+    width: 14%;
     background-color: #71A9BB;
     mix-blend-mode: difference;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
-    top: 10vh;
-    left: 42vh;
+    top: 22%;
+    left: 77%;
 }
