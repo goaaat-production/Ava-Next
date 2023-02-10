@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/directionPage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page21(){

@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page15(){
@@ -13,7 +15,12 @@ function Page15(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                <Header></Header>
+                <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+                    </section>
+                </section>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Mozart : Très bien, très bien, j'arrête.../
 

@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page23(){
@@ -22,7 +24,12 @@ function Page23(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : l incendie du steamer austria'></img>
+                <Header></Header>
+                <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : l incendie du steamer austria'></img>
+                    </section>
+                </section>
                 
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : Ca y est ?! On est sauvés ?/ :Matelot : Hourra !!! On est sauvés !/ :Capitaine : Merci à toi " + prenom + " ! Bon vent moussaillon !"}></Dialogue>
 

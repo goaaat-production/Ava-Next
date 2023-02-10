@@ -31,9 +31,7 @@ function Page10() {
         <>
             <section className="page" >
                 <div className={styles.container}>
-                    <section className='cadre'>
-                        <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau} />
-                    </section>
+                        <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className='tableau' />
                     <div className={styles.boat} onClick={clickOnBoat}></div>
                     <div className={styles.men} onClick={clickOnMen}></div>
                     <div className={styles.ribbon} onClick={clickOnRibbon}></div>

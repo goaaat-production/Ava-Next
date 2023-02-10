@@ -4,6 +4,8 @@ import Dialogue from '../../../app/components/Dialogues'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
+import Header from '../../../app/components/HeaderObjets'
+
 
 
 function Page20(){
@@ -23,7 +25,13 @@ function Page20(){
     return(
         <>  
             <section className="page">
-            <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
+                <Header></Header>
+                <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
+                    </section>
+                </section>
+
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : MAGNIFICO !!!/ :Titien : C’est le plus de tous les tableaux que je n’ai jamais vu !! Prends mon pinceau, tu en es digne !/ :Capitaine : " + prenom + " ! T'as récupéré le pinceau ? Parfait !/ :Capitaine : On a tout ce qu'il faut, ramène toi au navire !"}></Dialogue>
                 
                 <Choix shown={isLastPhrase}

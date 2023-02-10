@@ -22,6 +22,7 @@ function Page7(){
                     <section className='cadre'>
                         <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
                     </section>
+                    
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : Des gens sont tombés à l'eau... Il faut récuperer de quoi les secourir./
 
