@@ -13,7 +13,7 @@ function Page17(){
     return(
         <>  
             <section className="page">
-            <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+            <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Titien : Je sais ! C’est pour mon spazzola que vous venez !/
                     

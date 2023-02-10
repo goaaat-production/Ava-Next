@@ -24,23 +24,26 @@ function Page3(){
     return(
         <>  
             <section className="page">
-                <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Matelot : Le pont est en feu !/ 
+                <section className='dialogue'>
+                    <section className='cadre'>
+                        <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
+                    </section>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                        :Matelot : Le pont est en feu !/ 
 
-                    :Capitaine : Jetez les canaux à l’eau ! Les femmes et les enfants d’abord !/
+                        :Capitaine : Jetez les canaux à l’eau ! Les femmes et les enfants d’abord !/
 
-                    :Matelot : Capitaine, le feu se propage !/ 
+                        :Matelot : Capitaine, le feu se propage !/ 
 
-                    :Capitaine : Éteignez-moi ce feu !/
+                        :Capitaine : Éteignez-moi ce feu !/
 
-                    :Capitaine : Il nous faut plus de monde pour nous aider !!!/
+                        :Capitaine : Il nous faut plus de monde pour nous aider !!!/
 
-                    :Capitaine : Toi là bas !/
+                        :Capitaine : Toi là bas !/
 
-                    :Capitaine : Que est ton nom ?
-                "></Dialogue>
-                
+                        :Capitaine : Que est ton nom ?
+                    "></Dialogue>
+                </section>
 
                 <section className={(isLastPhrase ? "wrapper" : `${"wrapper"} ${"hidden"}`)}>
                     <label htmlFor="nom">Nom</label>

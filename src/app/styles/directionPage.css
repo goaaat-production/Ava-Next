@@ -3,6 +3,10 @@
     src: url("../../../public/JMHTypewriterDry.otf");
 }
 
+html{
+ margin: 0;
+}
+
 body{
     margin: 0;
     overflow: hidden;
@@ -34,7 +38,7 @@ body{
     transform: rotate(359deg);
     height: 67vh;
     top: -103px;
-    left: 171px;
+    left: 5rem;
 }
 
 .cadre{

@@ -23,7 +23,7 @@ function Page20(){
     return(
         <>  
             <section className="page">
-            <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
+            <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : MAGNIFICO !!!/ :Titien : C’est le plus de tous les tableaux que je n’ai jamais vu !! Prends mon pinceau, tu en es digne !/ :Capitaine : " + prenom + " ! T'as récupéré le pinceau ? Parfait !/ :Capitaine : On a tout ce qu'il faut, ramène toi au navire !"}></Dialogue>
                 
                 <Choix shown={isLastPhrase}

@@ -1,28 +1,57 @@
 .paragraphe{
-    width: 20rem;
-    height: 10rem;
-    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FBF8F8;
+    font-size: 14px;
+    min-width: 190px;
+    width: 5rem;
+    
+}
+
+.wrapperPasCptn{
+    padding-left: 2rem;
+}
+
+.wrapperCptn{
+    position: relative;
+    left: -1rem;
 }
 
 .wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+}
+
+.bulleWrapper{
+    position: relative;
+}
+
+.bulle{
+
+}
+
+.m4Rem{
+    position: relative;
+    left: -3.5rem;
 }
 
 .left{
-    background-color: aqua;
-    width: 3rem;
-    height: 10rem;
+    position: relative;
+    z-index: 1;
 }
 
 .right{
-    background-color: blueviolet;
-    width: 3rem;
-    height: 10rem;
+    position: relative;
+    z-index: 1;
+    left: -1.5rem;
 }
 
 .hidden{
