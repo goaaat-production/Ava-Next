@@ -6,12 +6,16 @@
 
 
 .boards {
+    display:flex;
+    align-items: center;
     position: relative;
-    width: 80vw;
-    height:70vw;
+    width: 90vw;
+    height: 70vw;
 }
 .boards > img {
-    width: 80vw;
+    border: solid white 5px;
+    transform: rotate(-5deg);
+    width:100%;
     top:10vw;
     left:0px;
     position: absolute;
@@ -33,6 +37,18 @@
     }
 }
 
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
 .board1{
     position: absolute;
     left: 1.5%;
@@ -50,14 +66,28 @@
 }
 
 .items {
-    width: 10vw;
+    display:flex;
+    transition: all 0s;
+    justify-content: space-around;
+    width: 80vw;
+
+}
+
+.item {
+    border-radius:100%;
+    animation : zoom-in-zoom-out 3s infinite;
+    height:15vw;
+    transition:all 0s;
 }
 
 .Shaking {
     animation: shake 0.5s;
 
 }
+.dialogue {
+    margin-top: 15vh;
 
+}
 
 
 

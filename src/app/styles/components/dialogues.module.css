@@ -1,4 +1,5 @@
 .paragraphe{
+    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -35,6 +36,8 @@
 
 .bulleWrapper{
     position: relative;
+    left: -3rem;
+
 }
 
 .bulle{
@@ -43,21 +46,26 @@
 
 .m4Rem{
     position: relative;
-    left: -3.5rem;
+    left: 3rem;
 }
 
 .left{
     position: relative;
     z-index: 1;
+    left: 6rem;
+}
+
+.leftHidden{
+    left: -80vw;
 }
 
 .right{
     position: relative;
     z-index: 1;
-    left: -1.5rem;
+    left: -6rem;
 }
 
-.hidden{
-    display: none;
+.rightHidden{
+    left: 80vw;
 }
 

@@ -27,6 +27,7 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 100vh;
+    overflow: hidden;
 }
 
 .hidden{
@@ -41,7 +42,6 @@ body{
     background-image: url("../../../public/texture.png");
     opacity: 50%;
     top: 0;
-    
 } 
 
 .tableau{
