@@ -20,12 +20,13 @@ function Page17(){
                     <section className='cadre'>
                         <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
                     </section>
-                </section>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Titien : Je sais ! C’est pour mon spazzola que vous venez !/
                     
                     :Titien : Le pinceau que l’empereur Charles Quint lui-même a ramassé !
                 "></Dialogue>
+                </section>
+                
                 
                 <Choix shown={isLastPhrase}
                     contenus="Je sais pas ce que c’est un spazzola mais... oui ?/Oui ma foi, le capitaine a besoin d’un pinceau."

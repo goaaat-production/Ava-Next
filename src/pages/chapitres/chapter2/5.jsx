@@ -20,8 +20,7 @@ function Page15(){
                     <section className='cadre'>
                         <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                     </section>
-                </section>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Mozart : Très bien, très bien, j'arrête.../
 
                     :Mozart : Prenez mon fauteuil et partez ! Bon vent !/
@@ -34,6 +33,8 @@ function Page15(){
 
                     :Capitaine : J’arrive ! Je sais comment faire mais j’ai besoin d’un pinceau ! Titien en a un ! Va le chercher !
                 "></Dialogue>
+                </section>
+                
                 
                 <Choix shown={isLastPhrase}
                     contenus="J'y vais"

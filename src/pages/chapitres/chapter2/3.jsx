@@ -20,12 +20,13 @@ function Page14(){
                     <section className='cadre'>
                         <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                     </section>
-                </section>
-                <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Mozart : Mon fauteuil ? Ne voyez-vous donc pas que je suis en train d’écrire ma dernière symphonie ?/
 
                     :Mozart : Enfin, de toute façon, regardez mes doigts, je ne la finirai pas, il ne m’en reste plus que 1, 2, 3…
                 "></Dialogue>
+                </section>
+                
                 
                 <Choix shown={isLastPhrase}
                     contenus="10 comme tout le monde !?/Oooh il en manque 2, vous en avez plus que 8..."
