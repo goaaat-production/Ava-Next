@@ -68,9 +68,9 @@ function Page10() {
                         {clickedObject === "" &&
                            "Appuyez sur les zones indiquées du tableau"}
                         {clickedObject === "bateau" &&
-                           "Réessayez"}
+                           "Mauvais objet, cherchez encore"}
                         {clickedObject === "hommes" &&
-                           "Réessayez"}
+                           "Mauvais objet, cherchez encore"}
                         {clickedObject === "ruban"&&
                            ""}
 
