@@ -20,38 +20,43 @@
 
 .objets{
     height: 3rem;
-    width: 3rem;
+    width: 5rem;
     border-radius: 100px;
     border-style: dashed;
     border-width: 4px;
     margin-top: 1rem;
     border-color: #D9C5AD;
-
+    margin-left: 1rem;
 }
 
 .objet1{
     height: 3rem;
-    width: 3rem;
+    width: 5rem;
     margin-top: 1rem;
     background-image: url('../../../../public/objet1.png');
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 1rem;
 }
 
 .objet2{
     height: 3rem;
-    width: 3rem;
+    width: 5rem;
     margin-top: 1rem;
     background-image: url('../../../../public/objet2.png');
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 1rem;
+
 }
 
 .objet3{
     height: 3rem;
-    width: 3rem;
+    width: 5rem;
     margin-top: 1rem;
     background-image: url('../../../../public/objet3.png');
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 1rem;
+
 }

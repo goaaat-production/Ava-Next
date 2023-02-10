@@ -55,8 +55,10 @@ body{
 .tableau{
     position: relative;
     transform: rotate(-5deg);
-    width: 90vw;
+    width: 76vw;
+    height: 27vh;
     max-width: 370px;
+    object-fit: cover;
     border: solid;
     border-width: 0.5rem;
     border-color: white;
@@ -79,6 +81,7 @@ button{
     font-family: 'Typewriter';
     background-size: cover;
     margin-top: 3rem;
+    z-index: 3;
 }
 
 a{
