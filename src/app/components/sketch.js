@@ -13,7 +13,7 @@ function sketch(p) {
         p.createCanvas(width,height );
         p.background('white');
         p.img = p.loadImage('/gomme.png');
-        p.button1 = p.createButton("save");
+        p.button1 = p.createButton("Sauvegarder");
         p.button1.size(width/3,width/9);
         p.button1.position(width*0.75,height*0.1);
         p.button1.mouseClicked(p.exporter);

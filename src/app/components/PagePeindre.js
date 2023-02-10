@@ -1,6 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 import sketch from './sketch'
+import Choix from './Choix'
 import styles from '../styles/components/PagePeindre.module.css'
 
 const ReactP5Wrapper = dynamic(() => import('react-p5-wrapper')
@@ -15,9 +16,12 @@ function PagePeindre() {
                 <div className={styles.drawboard } id='test'>
                     <ReactP5Wrapper sketch={sketch} /> 
                 </div>
-                <button className={styles.buttonValider}>
-                    Valider
-                </button>
+                <Choix shown={true}
+                        contenus="Valider"
+                        liens={[
+                            { href: "./[id]", as: "./5" },
+                        ]}
+                    ></Choix>
 
             </div>
 
