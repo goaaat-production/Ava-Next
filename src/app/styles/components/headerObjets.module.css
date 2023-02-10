@@ -29,13 +29,28 @@
 }
 
 .objet1{
-
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    background-image: url('../../../../public/objet1.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .objet2{
-
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    background-image: url('../../../../public/objet2.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .objet3{
-
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    background-image: url('../../../../public/objet3.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }

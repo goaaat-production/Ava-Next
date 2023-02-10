@@ -13,7 +13,7 @@ function Header(props){
                 <div className={styles.fill}></div>
 
 
-                    {(!props.objet1? 
+                    {(!props.objet1?
                         <div className={`${styles.objets}`}></div>                  
                     :   <div className={`${styles.objet1}`}></div> )}
                     {(!props.objet2? 

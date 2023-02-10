@@ -15,7 +15,7 @@ function Page11(){
     return(
         <>  
             <section className="page">
-                <Header></Header>
+                <Header objet1={true}></Header>
                 <section className='dialogue'>
                     <section className='cadre'>
                         <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
