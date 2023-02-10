@@ -15,8 +15,8 @@ function ItemsDND({id, url}) {
   return (
   <>
 
-  <div ref={drag} style={{opacity: isDragging ? 0.5 : 1,}}>
-    <img className = {styles.items} src={url} style={{border: isDragging ? "5px solid pink" : "0px"}} ref={drag}/>  
+  <div ref={drag} style={{transition:'all 0s', opacity: isDragging ? 0 : 1,}}>
+    <img className = {styles.item} src={url} ref={drag}/>  
   </div>
   
   </>

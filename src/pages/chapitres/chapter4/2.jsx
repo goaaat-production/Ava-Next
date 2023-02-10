@@ -10,6 +10,7 @@ import { Preview } from 'react-dnd-preview'
 import { DndProvider } from 'react-dnd'
 import {HTML5Backend} from 'react-dnd-html5-backend'
 import { TouchBackend } from 'react-dnd-touch-backend'
+import Header from '../../../app/components/HeaderObjets'
 function Page22(){
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
@@ -17,7 +18,7 @@ function Page22(){
     return(
         <>  
             <section className="page">
-                
+           <Header></Header>     
             <DndProvider backend={TouchBackend} >
                 <DragAndDrop/>
                 <Preview generator={generatePreview}/>
