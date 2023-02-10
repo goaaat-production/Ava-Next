@@ -13,6 +13,9 @@ function Page10() {
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
+    function vide(){
+
+    }
 
     let [clickedObject, setClickedObject] = useState("");
 
@@ -32,6 +35,7 @@ function Page10() {
     return (
         <>
             <section className="page" >
+                <Header></Header>
                 <div className={styles.container}>
                     <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className='tableau' />
                     <div className={styles.boat} onClick={clickOnBoat}></div>
@@ -41,24 +45,22 @@ function Page10() {
 
                 <div className="container">
                     {clickedObject === "" &&
-                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
-                :Capitaine : Trouve moi un objet qui
-                pourrait secourir mes hommes.
-            "></Dialogue>}
-
-
+                        <Dialogue setIsLastPhrase={vide} dialogue="
+                        :Capitaine : Trouve moi un objet qui
+                        pourrait secourir mes hommes.
+                        "></Dialogue>}
                     {clickedObject === "bateau" &&
-                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
-                :Duchesse : Mon navire ? Enfin, soyez réaliste...
-            "></Dialogue>}
+                        <Dialogue setIsLastPhrase={vide} dialogue="
+                        :Duchesse : Mon navire ? Enfin, soyez réaliste...
+                        "></Dialogue>}
 
                     {clickedObject === "hommes" &&
-                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
+                        <Dialogue  setIsLastPhrase={vide} dialogue="
                         :Duchesse : Mais ce sont mes hommes. Vous n’allez pas en couler d’autres !"></Dialogue>
                     }
                     {clickedObject === "ruban" &&
                         <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
-                        :Duchesse : Judicieux choix ! Les naufragés sont peints de petite taille, mon bandeau est assez long pour qu’ils s’y accrochent. Edgar, passez dont ce bandeau à notre ami !"></Dialogue>
+                        :Duchesse : Judicieux choix ! Les naufragés sont peints de petite taille, mon bandeau suffira largement.../ :Duchesse : Edgar, passez dont ce bandeau à notre ami !"></Dialogue>
                     }
                 </div>
 
@@ -77,7 +79,7 @@ function Page10() {
                     </p>
                 </div>
                 {clickedObject === "ruban" &&
-                    <Choix shown={true}
+                    <Choix shown={isLastPhrase}
                         contenus="Suivant"
                         liens={[
                             { href: "./[id]", as: "./5" },

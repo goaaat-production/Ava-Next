@@ -24,7 +24,7 @@ function Page23(){
     return(
         <>  
             <section className="page">
-                <Header objet1={true} objet2={true} objet3={true}></Header>
+                <Header></Header>
                 <section className='dialogue'>
                     <section className='cadre'>
                         <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : l incendie du steamer austria'></img>

@@ -1,11 +1,16 @@
 import React from 'react';
+import { useRouter } from 'next/router'
 import ItemsDND from './itemsDND';
 import { useState } from "react";
 import { useDrop } from 'react-dnd';
 import { useDrag } from 'react-dnd';
 import styles from '../styles/components/dragAndDrop.module.css'
 import Dialogue from './Dialogues';
+<<<<<<< HEAD
 import { Preview } from 'react-dnd-preview'
+=======
+import Choix from './Choix';
+>>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
 const ItemList = [
     {
         id: 1,
@@ -26,15 +31,23 @@ var Board1reussi = true
 var Board2reussi = true
 var Board3reussi = true
 
+let gagné = false;
 
 var globalItemId = null
 
 var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
 
+<<<<<<< HEAD
 
 function Gagné(){
     console.log('Vous avez gagné')
+=======
+export const generatePreview = ({itemType, item, style}) => {
+    return <div  style={style}>{itemType}</div>
+>>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
 }
+
+
 
 function removeObjectWithId(arr, id) {
     const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
@@ -56,23 +69,33 @@ function IsFinish (array) {
 
 
 function DragAndDrop() {
+<<<<<<< HEAD
 
 
+=======
+    const router = useRouter()
+>>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
     let [isLastPhrase, setIsLastPhrase] = useState(false);
+
+
+    const gagné = () =>{
+        console.log('Vous avez gagné')
+        router.push('./3')    
+    }
 
 
     function DialogueCapitaine(itemId,boardId) {
         if (itemId === 3 & boardId === 1) {
             return(
-            ":Capitaine : Exactement ! ")
+            ":Capitaine : Oui le siège de mozart fait un parfait contrepoid pour redresser le navire. ")
         }
         else if (itemId === 1 & boardId === 2) {
             return(
-            ":Capitaine : Oui ! ")
+            ":Capitaine : Exactement ! Le ruban va pouvoir récuperer les gens à la mer !")
         }
         else if (itemId === 2 & boardId === 3) {
             return(
-            ":Capitaine : Bravo !")
+            ":Capitaine : Parfait ! On va pouvoir repeindre sur les flammes.")
         }
 
 
@@ -86,7 +109,7 @@ function DragAndDrop() {
         }
         else if (itemId === 1 & boardId !== 2){
             return(
-            ":Capitaine : Non pas là ! On a besoin du ruban à l'avant du bâteau pour récuperer les noyés")
+            ":Capitaine : Non pas là ! Le ruban doit pouvoir récuperer des gens")
         }
     }
     
@@ -125,9 +148,13 @@ function DragAndDrop() {
             isOver3: !!monitor.isOver(),
         })
     }))    
+<<<<<<< HEAD
     
 
     
+=======
+
+>>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
 
 
     const AddImageToBoard = (itemId, boardId) => {
@@ -193,7 +220,7 @@ function DragAndDrop() {
 
     const toggle = () => {
         this.setState(prev => ({ reveal: !prev.reveal }))
-      }
+    }
     
 
 
@@ -248,11 +275,11 @@ function DragAndDrop() {
 
                 <div>
                     {
-                        (NombreObjet === 3 ? Gagné() : null)
+                        (NombreObjet === 3 ? gagné() : null)
                     }
                 </div>
                 <div className={styles.dialogue}>
-                <Dialogue  setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>
+                    {<Dialogue  setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>}
                 </div>
             </div>
 

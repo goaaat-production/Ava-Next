@@ -17,15 +17,13 @@ function PagePeindre() {
                     <ReactP5Wrapper sketch={sketch} /> 
                 </div>
                 <Choix shown={true}
-                        contenus="Valider"
-                        liens={[
-                            { href: "./[id]", as: "./5" },
-                        ]}
-                    ></Choix>
+                    contenus="Valider"
+                    liens={[
+                        { href: "./[id]", as: "./5" },
+                    ]}
+                ></Choix>
 
             </div>
-
-
         </>
     )
 }
