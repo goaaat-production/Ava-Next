@@ -7,41 +7,56 @@ import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 
 
-function Page10(){
+function Page10() {
 
-    let [isLastPhrase, setIsLastPhrase] = useState(false);
 
-function clickOnBoat(){
-console.log('Ok')
-}
+    let [clickedObject, setClickedObject] = useState("");
 
-function clickOnMen(){
-    console.log('Mashallah')
-}
-
-function clickOnRibbon(){
-    console.log('Moui')
+    function clickOnBoat() {
+        setClickedObject("bateau")
     }
 
-    return(
-        <>  
+    function clickOnMen() {
+        setClickedObject("hommes")
+    }
+
+    function clickOnRibbon() {
+        setClickedObject("ruban")
+    }
+
+
+    return (
+        <>
             <section className="page" >
                 <div className={styles.container}>
-                    <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau}/>
-                        <div className={styles.boat} onClick={clickOnBoat}></div>
-                        <div className={styles.men} onClick={clickOnMen}></div>
-                        <div className={styles.ribbon} onClick={clickOnRibbon}></div>
+                    <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className={styles.tableau} />
+                    <div className={styles.boat} onClick={clickOnBoat}></div>
+                    <div className={styles.men} onClick={clickOnMen}></div>
+                    <div className={styles.ribbon} onClick={clickOnRibbon}></div>
                 </div>
-            
-                
-                <Choix shown={true}
-                    contenus="Fin du jeu"
-                    liens={[
-                        { href: "./[id]", as: "./5" },
-                        ]}                      
-                ></Choix>
+
+                <div className="container">
+                    {clickedObject === "bateau" &&
+                        <p>Bateau</p>
+                    }
+                    {clickedObject === "hommes" &&
+                        <p>Hommes</p>
+                    }
+                    {clickedObject === "ruban" &&
+                        <p>Ruban</p>
+                    }
+                </div>
+
+                {clickedObject === "ruban" &&
+                    <Choix shown={true}
+                        contenus="Fin du jeu"
+                        liens={[
+                            { href: "./[id]", as: "./5" },
+                        ]}
+                    ></Choix>
+                }
             </section>
-            
+
         </>
     )
 }
