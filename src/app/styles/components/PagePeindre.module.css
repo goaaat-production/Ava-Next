@@ -12,6 +12,7 @@
 .drawboard {
     width:80vw;
     height:60vh;
+    /* max-width: 300px; */
 }
 
 .buttonValider {
