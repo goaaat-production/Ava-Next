@@ -1,8 +1,10 @@
 .tableau{
-    width: 70vh;
-    height: 1;
     z-index: -1;
-    
+    position: relative;
+    transform: rotate(359deg);
+    height: 67vh;
+    top: -103px;
+    left: 5rem;
 }
 
 .container{
@@ -10,27 +12,27 @@
 }
 
 .boat{
-    height: 7vh;
-    width: 7vh;
+    height: 10vh;
+    width: 10vh;
     background-color: #71A9BB;
     mix-blend-mode: difference;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
-    top: 8vh;
-    left: 2vh;
+    top: 1vh;
+    left: 13vh;
 }
 
 .men{
-    height: 7vh;
-    width: 7vh;
+    height: 10vh;
+    width: 10vh;
     background-color: #71A9BB;
     mix-blend-mode: difference;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
-    top: 14vh;
-    left: 40vh;
+    top: 9vh;
+    left: 71vh;
 }
 
 .ribbon{

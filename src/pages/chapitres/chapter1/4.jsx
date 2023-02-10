@@ -11,6 +11,8 @@ import Header from '../../../app/components/HeaderObjets'
 
 function Page10() {
 
+    let [isLastPhrase, setIsLastPhrase] = useState(false);
+
 
     let [clickedObject, setClickedObject] = useState("");
 
@@ -38,20 +40,26 @@ function Page10() {
                 </div>
 
                 <div className="container">
+
                     {clickedObject === "bateau" &&
-                        <p>Bateau</p>
-                    }
+                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
+                :Duchesse : Mon navire ? Enfin, soyez réaliste...
+            "></Dialogue>}
+
                     {clickedObject === "hommes" &&
-                        <p>Hommes</p>
+                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
+                        :Duchesse : Mais ce sont mes hommes. Vous n’allez pas en couler d’autres !"></Dialogue>
                     }
                     {clickedObject === "ruban" &&
-                        <p>Ruban</p>
+                        <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
+                        :Duchesse : Judicieux choix ! Les naufragés sont peints de petite taille, mon bandeau est assez long pour qu’ils s’y accrochent. Edgar, passez dont ce bandeau à notre ami !"></Dialogue>
                     }
                 </div>
 
+
                 {clickedObject === "ruban" &&
                     <Choix shown={true}
-                        contenus="Fin du jeu"
+                        contenus="Suivant"
                         liens={[
                             { href: "./[id]", as: "./5" },
                         ]}
