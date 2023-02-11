@@ -8,6 +8,7 @@ import styles from '../styles/components/dragAndDrop.module.css'
 import Dialogue from './Dialogues';
 import { Preview } from 'react-dnd-preview'
 import Choix from './Choix';
+
 const ItemList = [
     {
         id: 1,
@@ -34,10 +35,6 @@ var globalItemId = null
 
 var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
 
-
-function Gagné(){
-    console.log('Vous avez gagné')
-}
 export const generatePreview = ({itemType, item, style}) => {
     return <div  style={style}>{itemType}</div>
 }

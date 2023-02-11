@@ -43,7 +43,7 @@ body{
     height: 10rem;
     justify-content: space-between;
     padding-bottom: 3rem;
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 .wrapper-form button{
