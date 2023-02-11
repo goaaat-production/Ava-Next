@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 import ItemsDND from './itemsDND';
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { useDrop } from 'react-dnd';
 import { useDrag } from 'react-dnd';
 import styles from '../styles/components/dragAndDrop.module.css'
@@ -24,7 +24,21 @@ const ItemList = [
     }
 ]
 
-const baseItemList = ItemList;
+const baseItemList = [
+    {
+        id: 0,
+        url: "/objet1.png"
+    },
+    {
+        id: 1,
+        url: "/objet2.png"
+    },
+    {
+        id: 2,
+        url: "/objet3.png"
+    }
+]
+
 
 var NombreObjet = 0;
 
@@ -66,7 +80,6 @@ function IsFinish (array) {
 function DragAndDrop() {
     const router = useRouter()
     let [isLastPhrase, setIsLastPhrase] = useState(false);
-
 
     const gagné = () =>{
         console.log('Vous avez gagné')
@@ -201,9 +214,7 @@ function DragAndDrop() {
     const toggle = () => {
         this.setState(prev => ({ reveal: !prev.reveal }))
     }
-    
-
-
+ 
 
 
     return (
