@@ -15,7 +15,7 @@ function Page18(){
     return(
         <>  
             <section className="page">
-            <Header objet1={true} objet2={true}></Header>
+            <Header objet1={true} objet3={true}></Header>
                 <section className='dialogue'>
                     <section className='cadre'>
                         <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>

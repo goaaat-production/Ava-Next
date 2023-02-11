@@ -15,7 +15,7 @@ function Page15(){
     return(
         <>  
             <section className="page">
-                <Header objet1={true} objet2={true}></Header>
+                <Header objet1={true} objet3={true}></Header>
                 <section className='dialogue'>
                     <section className='cadre'>
                         <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
