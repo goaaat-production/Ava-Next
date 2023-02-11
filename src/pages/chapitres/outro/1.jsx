@@ -1,3 +1,4 @@
+import '../../../app/styles/outroPage.css'
 import Choix from '../../../app/components/Choix'
 
 function Page24() {
@@ -6,16 +7,22 @@ function Page24() {
     return (
         <>
             <section className="page">
-                <p>Dans un monde fictif, l’histoire peut être réécrite ou inventée.</p>
-
-            </section>
-            
-            <Choix shown={true}
+                <div className='container'>
+                <div className='circle'></div>
+                <p>Dans un monde fictif, l’histoire <br/>peut être réécrite ou inventée.</p>
+                </div>
+                
+            <section className="boutons">
+                <Choix shown={true}
                     contenus="Suivant"
                     liens={[
                         { href: "./[id]", as: "./2" },
                         ]}   
                 ></Choix>
+
+            </section>
+            </section>
+            
 
         </>
     )
