@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link"
 import Dialogue from '../../../app/components/Dialogues'
-import styles from '../../../app/styles/game1.module.css'
+import styles from '../../../app/styles/components/game1.module.css'
 import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
