@@ -11,18 +11,21 @@ import Choix from './Choix';
 
 const ItemList = [
     {
-        id: 1,
+        id: 0,
         url: "/objet1.png"
     },
     {
-        id: 2,
+        id: 1,
         url: "/objet2.png"
     },
     {
-        id: 3,
+        id: 2,
         url: "/objet3.png"
     }
 ]
+
+const baseItemList = ItemList;
+
 var NombreObjet = 0;
 
 var Board1reussi = true
@@ -36,7 +39,7 @@ var globalItemId = null
 var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
 
 export const generatePreview = ({itemType, item, style}) => {
-    return <div  style={style}>{itemType}</div>
+    return <div  className={styles.preview} style={style}><img src={baseItemList[item.id].url}></img></div>
 }
 
 
@@ -72,29 +75,29 @@ function DragAndDrop() {
 
 
     function DialogueCapitaine(itemId,boardId) {
-        if (itemId === 3 & boardId === 1) {
+        if (itemId === 2 & boardId === 1) {
             return(
             ":Capitaine : Oui le siège de mozart fait un parfait contrepoid pour redresser le navire. ")
         }
-        else if (itemId === 1 & boardId === 2) {
+        else if (itemId === 0 & boardId === 2) {
             return(
             ":Capitaine : Exactement ! Le ruban va pouvoir récuperer les gens à la mer !")
         }
-        else if (itemId === 2 & boardId === 3) {
+        else if (itemId === 1 & boardId === 3) {
             return(
             ":Capitaine : Parfait ! On va pouvoir repeindre sur les flammes.")
         }
 
 
-        else if (itemId === 3 & boardId !== 1) {
+        else if (itemId === 2 & boardId !== 1) {
             return(
             ":Capitaine : Noon ! On a besoin de poid à tribord !  ")
         }
-        else if (itemId === 2 & boardId !== 3) {
+        else if (itemId === 1 & boardId !== 3) {
             return(
             ":Capitaine : Pas ici ! Le pinceau peut nous aider à éteindre les flammes... ")
         }
-        else if (itemId === 1 & boardId !== 2){
+        else if (itemId === 0 & boardId !== 2){
             return(
             ":Capitaine : Non pas là ! Le ruban doit pouvoir récuperer des gens")
         }
@@ -139,62 +142,59 @@ function DragAndDrop() {
 
     const AddImageToBoard = (itemId, boardId) => {
         const pictureList = ItemList.filter((item) => itemId === item.id); // récupère l'objet de l'ID = itemId
-        if (itemId === 3 & boardId === 1) {
+        if (itemId === 2 & boardId === 1) {
             setBoard((board) => [...board, pictureList[0]]);
             removeObjectWithId(ItemList, itemId)
             NombreObjet += 1;
-            DialogueCap = DialogueCapitaine(3,1)
+            DialogueCap = DialogueCapitaine(2,1)
         }
-        else if (itemId === 1 & boardId === 2) {
+        else if (itemId === 0 & boardId === 2) {
             setBoard2((board2) => [...board2, pictureList[0]]);
             removeObjectWithId(ItemList, itemId)
             NombreObjet += 1;
-            DialogueCap = DialogueCapitaine(1,2)
+            DialogueCap = DialogueCapitaine(0,2)
         }
-        else if (itemId === 2 & boardId === 3) {
+        else if (itemId === 1 & boardId === 3) {
             setBoard3((board3) => [...board3, pictureList[0]]);
             removeObjectWithId(ItemList, itemId)
             NombreObjet += 1;
-            DialogueCap = DialogueCapitaine(2,3)
+            DialogueCap = DialogueCapitaine(1,3)
         }
-        else if (itemId === 3 & boardId !== 1) {
+        else if (itemId === 2 & boardId !== 1) {
 
             
             if (boardId===2) {
                 Board2reussi =false
-                DialogueCap = DialogueCapitaine(3,1)
+                DialogueCap = DialogueCapitaine(2,1)
             }
             else if (boardId===3) {
                 Board3reussi =false
-                DialogueCap = DialogueCapitaine(3,3)
+                DialogueCap = DialogueCapitaine(2,3)
             }
         }
-        else if (itemId === 2 & boardId !== 3) {
+        else if (itemId === 1 & boardId !== 3) {
                         if (boardId===2) {
                 Board2reussi =false
-                DialogueCap = DialogueCapitaine(2,2)
+                DialogueCap = DialogueCapitaine(1,2)
             }
             else if (boardId===1) {
                 Board1reussi =false
-                DialogueCap = DialogueCapitaine(2,1)
+                DialogueCap = DialogueCapitaine(1,1)
             }
 
         }
-        else if (itemId === 1 & boardId !== 2) {
+        else if (itemId === 0 & boardId !== 2) {
 
 
             if (boardId===1) {
                 Board1reussi =false
-                DialogueCap = DialogueCapitaine(1,1)
+                DialogueCap = DialogueCapitaine(0,1)
             }
             else if (boardId===3) {
                 Board3reussi =false
-                DialogueCap = DialogueCapitaine(1,3)
+                DialogueCap = DialogueCapitaine(0,3)
             }
         }
-
-
-        console.log("ItemList = ", ItemList)
     }
 
 

@@ -4,6 +4,9 @@
     align-items: center;
 }
 
+.preview{
+    z-index: 3;
+}
 
 .boards {
     display:flex;
