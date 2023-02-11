@@ -13,6 +13,7 @@
     min-width: 190px;
     width: 5rem;
     box-shadow: -2px -8px 20px 15px rgb(0 0 0 / 51%);
+    cursor: pointer;
 }
 
 .wrapperPasCptn{
