@@ -29,7 +29,6 @@ function Page4(){
                     "></Dialogue>
                 </section>
                 
-                
                 <Choix shown={isLastPhrase}
                     contenus="J’accepte !/J'ai la flemme un peu..."
                     liens={[

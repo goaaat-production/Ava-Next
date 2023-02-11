@@ -35,6 +35,7 @@ function Page3(){
 
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : "+ prenom + " ? Original.../ :Capitaine : Qu'est-ce que tu fait là ?"}></Dialogue>
                 </section>  
+
                 <Choix shown={isLastPhrase}
                     contenus="Je vous regarde/Rien, je ne fait pas partie du navire..."
                     liens={[

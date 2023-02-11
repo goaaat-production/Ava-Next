@@ -124,3 +124,7 @@ a{
     position: absolute;
     top: 150vh;
 }
+
+.hidden{
+    display: none;
+}
