@@ -49,7 +49,7 @@ function Page3(){
                     "></Dialogue>
                 </section>
 
-                <div className='container'>
+                <div className='container container-consigne'>
                     <p className={(isLastPhrase ? `${"consigne"} ${"hidden"}` : `${"consigne"}`)}>
                         Appuyez sur les dialogues <br/>
                         pour avancer
