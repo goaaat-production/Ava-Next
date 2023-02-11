@@ -23,7 +23,9 @@ function Page14(){
                         <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>
                     </section>
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                    :Mozart : Mon fauteuil ? Ne voyez-vous donc pas que je suis en train d’écrire ma dernière symphonie ?/
+                    :Mozart : Vous me dérangez pour cette raison ?/
+
+                    :Mozart :  Ne voyez-vous donc pas que je suis en train d’écrire ma dernière symphonie ?/
 
                     :Mozart : Enfin, de toute façon, regardez mes doigts, je ne la finirai pas, il ne m’en reste plus que 1, 2, 3…
                 "></Dialogue>
