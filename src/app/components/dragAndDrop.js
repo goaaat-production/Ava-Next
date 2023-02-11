@@ -6,11 +6,8 @@ import { useDrop } from 'react-dnd';
 import { useDrag } from 'react-dnd';
 import styles from '../styles/components/dragAndDrop.module.css'
 import Dialogue from './Dialogues';
-<<<<<<< HEAD
 import { Preview } from 'react-dnd-preview'
-=======
 import Choix from './Choix';
->>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
 const ItemList = [
     {
         id: 1,
@@ -37,14 +34,12 @@ var globalItemId = null
 
 var DialogueCap = " :Capitaine : Place les objets au bon endroit !"
 
-<<<<<<< HEAD
 
 function Gagné(){
     console.log('Vous avez gagné')
-=======
+}
 export const generatePreview = ({itemType, item, style}) => {
     return <div  style={style}>{itemType}</div>
->>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
 }
 
 
@@ -69,12 +64,7 @@ function IsFinish (array) {
 
 
 function DragAndDrop() {
-<<<<<<< HEAD
-
-
-=======
     const router = useRouter()
->>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
     let [isLastPhrase, setIsLastPhrase] = useState(false);
 
 
@@ -148,13 +138,6 @@ function DragAndDrop() {
             isOver3: !!monitor.isOver(),
         })
     }))    
-<<<<<<< HEAD
-    
-
-    
-=======
-
->>>>>>> 37e1bf75ad4bf51ab716336593fa2234513c8bd0
 
 
     const AddImageToBoard = (itemId, boardId) => {

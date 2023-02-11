@@ -16,7 +16,7 @@ function index(){
                     <section className='bottomLogo'>
                         <h2 className='subTextLogo'>Ad Vitam Aeternam</h2>
                         <img className='logoDeco' src="/AvaLogoDeco.svg" alt="Logo Ava" />
-                    </section>
+                    </section>np
 
                     
 
