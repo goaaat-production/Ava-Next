@@ -35,7 +35,7 @@ function Page23(){
                 
 
                 <Choix shown={isLastPhrase}
-                    contenus="La bise capitaine"
+                    contenus="Suivant"
                     liens={[
                         { href: "../outro/[id]", as: "../outro/1" },
                         ]}   
