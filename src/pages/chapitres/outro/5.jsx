@@ -7,9 +7,12 @@ function Page28() {
     return (
         <>
             <section className="page">
+            <section className="texture"></section>
+            <div className='container2'>
+                <div className='circle'></div>
                 <p>Et l’incendie et ses victimes ne seront jamais oubliés. </p>
 
-
+</div>
                 <Choix shown={true}
                 contenus="Suivant"
                 liens={[

@@ -59,18 +59,42 @@ a{
     margin-bottom: 11rem;
 }
 
+.container2{
+    position: relative;
+    margin: 17rem 2rem 11rem;
+}
+.container3{
+    position: relative;
+    margin: 10rem 2rem 5rem;
+}
+
+
+.final_text{
+    margin: 0rem 2rem ;
+}
+
 .circle{
     height: 8rem;
     width: 8rem;
     background-color: #DC7753;
     mix-blend-mode: difference;
     border-radius: 50%;
-    z-index: -5;
     position: absolute;
+    z-index: -1;
     top: -39%;
     left: -8%;
 }
 
 .boutons{
     margin-top: 2rem;
+}
+
+.texture{
+    background-image: url("../../../public/texture.png");
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: hard-light;
+    z-index: -1;
+    transition: none;
 }

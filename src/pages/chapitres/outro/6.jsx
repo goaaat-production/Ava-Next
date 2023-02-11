@@ -7,8 +7,11 @@ function Page29() {
     return (
         <>
             <section className="page">
-                <p>Si l’histoire ne peut être changée, elle peut être racontée par le biais de ces œuvres. Merci à vous qui prenez le temps de regarder toutes ces créations. </p>
-
+            <section className="texture"></section>
+            <div className='container3'>
+                <div className='circle'></div>
+                <p className='final_text'>Si l’histoire ne peut être changée, elle peut être racontée par le biais de ces œuvres. <br/><br/>Merci à vous qui prenez le temps de regarder toutes ces créations. </p>
+</div>
                 <Choix shown={true}
                     contenus="Recommencer le jeu"
                     liens={[
