@@ -1,5 +1,5 @@
 .wrapper{
-    width: 100vw;
+    /* width: 100vw; */
     height: -moz-fit-content;
     height: fit-content;
     min-height: 4rem;
@@ -24,7 +24,7 @@
     width: 100px;
     background-color: #3c92ad63;
     position: absolute;
-    border-radius: 100px;
+    border-radius: 50%;
     mix-blend-mode: multiply;
-    left: 10px;
+    left: -1rem;
 }
