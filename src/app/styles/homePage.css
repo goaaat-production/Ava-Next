@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Typewriter";
+    src: url("../../../public/JMHTypewriterDry.otf");
+}
+
+html{
+ margin: 0;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Typewriter';
+    font-size: 18px;
+    color: white;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../../../public/lincendie-du-steamer-austria.png");
+    backdrop-filter: blur(4px);
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 51%);
+
+}
+
+button{
+    background-image: url("../../../public/button1.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0%;
+    border-width: 0;
+    min-width: 5rem;
+    min-height: 3rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Typewriter';
+    margin-top: 2rem;
+    margin: 2rem;
+
+}
+
+.logo{
+    margin-top: 15rem;
+}
+
+.topLogo{
+    position: relative;
+}
+
+.textLogo{
+    position: relative;
+    z-index: 1;
+}
+
+.circle{
+    position: absolute;
+    top: -79px;
+    left: -89px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: #71A9BB;
+    mix-blend-mode: difference;
+}
+
+.bottomLogo{
+    position: relative;
+    transform: rotate(-4deg);
+    left: 2rem;
+    top: -1rem;
+}
+
+.subTextLogo{
+    position: relative;
+    z-index: 1;
+}
+
+.logoDeco{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.boutons{
+    margin-top: 5rem;
+}
+
+.booutons:nth-child(1){
+    transform: rotate(5deg);
+}
+
+.decoBottom{
+    position: fixed;
+    width: 100vw;
+    top: 100vh;
+    transform: translateY(-100%);
+    z-index: -1;
+}
