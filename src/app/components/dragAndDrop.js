@@ -212,37 +212,41 @@ function DragAndDrop() {
             <div className={styles.content}>
                 <div className={styles.boards}>
                     <img src='/lincendie-du-steamer-austria.png'></img>
-                    <div id= "board1" className={`${styles.board1} ${(!Board1reussi? styles.Shaking : '')}`} ref={drop} style={{
-                        backgroundColor: isOver? "yellow" : "white",
-                        opacity: IsFinish(board)? '0%' : '40%'
-                    }} >   
-                        {board.map((item) => {
-                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
-                        })}
+                        <div className={styles.boardSlots}> 
+                            <div id= "board1" className={`${styles.board1} ${(!Board1reussi? styles.Shaking : '')}`} ref={drop} style={{
+                                backgroundColor: isOver? "yellow" : "white",
+                                opacity: IsFinish(board)? '0%' : '40%'
+                            }} >   
+                                {board.map((item) => {
+                                    return <ItemsDND key={item.id} url={item.url} id={item.id} />
+                                })}
+                            </div>
+                            <div id= "board2" className={`${styles.board2} ${(!Board2reussi? styles.Shaking : '')}`} ref={drop2} style={{
+                                backgroundColor: isOver2? "yellow" : "white",
+                                opacity: IsFinish(board2)? '0%' : '40%'
+                            }} >   
+                                {board2.map((item) => {
+                                    const generatePreview = ({itemType, item, style}) => {
+                                        return <div style={style}> <img src={item.url}></img></div>
+                                    } 
+                                    return <ItemsDND key={item.id} url={item.url} id={item.id} />
+                                })}
+                            </div>
+                            <div id= "board3" className={`${styles.board3} ${(!Board3reussi? styles.Shaking : '')}`} ref={drop3} style={{
+                                backgroundColor: isOver3? "yellow" : "white",
+                                opacity: IsFinish(board3)? '0%' : '40%'
+                            }} >   
+                            
+                                {board3.map((item) => {
+                                        const generatePreview = ({itemType, item, style}) => {
+                                            return <div style={style}> <img src={item.url}></img></div>
+                                        } 
+                                    return <ItemsDND  key={item.id} url={item.url} id={item.id} />
+                                })}
+                        </div>
                     </div>
-                    <div id= "board2" className={`${styles.board2} ${(!Board2reussi? styles.Shaking : '')}`} ref={drop2} style={{
-                        backgroundColor: isOver2? "yellow" : "white",
-                        opacity: IsFinish(board2)? '0%' : '40%'
-                    }} >   
-                        {board2.map((item) => {
-                            const generatePreview = ({itemType, item, style}) => {
-                                return <div style={style}> <img src={item.url}></img></div>
-                              } 
-                            return <ItemsDND key={item.id} url={item.url} id={item.id} />
-                        })}
-                    </div>
-                    <div id= "board3" className={`${styles.board3} ${(!Board3reussi? styles.Shaking : '')}`} ref={drop3} style={{
-                        backgroundColor: isOver3? "yellow" : "white",
-                        opacity: IsFinish(board3)? '0%' : '40%'
-                    }} >   
                     
-                        {board3.map((item) => {
-                                const generatePreview = ({itemType, item, style}) => {
-                                    return <div style={style}> <img src={item.url}></img></div>
-                                  } 
-                            return <ItemsDND  key={item.id} url={item.url} id={item.id} />
-                        })}
-                    </div>
+                    
                 </div>
                 <div className={styles.items}>
                     {ItemList.map((item) => {

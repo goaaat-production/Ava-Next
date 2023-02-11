@@ -13,13 +13,14 @@
     align-items: center;
     position: relative;
     width: 90vw;
-    height: 70vw;
+    height: 40vh;
+    max-width: 370px;
 }
 .boards > img {
     border: solid white 5px;
     transform: rotate(-5deg);
     width:100%;
-    top:10vw;
+    top:0;
     left:0px;
     position: absolute;
 }
@@ -28,7 +29,9 @@
     align-items:center;
     justify-content: center;
     width: 15vw;
+    max-width: 62px;
     height: 15vw;
+    max-height: 62px;
     background-color: rgba(255,255,255,40%);
     border-radius: 50%;
 
@@ -55,17 +58,21 @@
 .board1{
     position: absolute;
     left: 1.5%;
-    top:33vw;
+    top:16vh;
 }
 .board2{
     position: absolute;
     left: 30%;
-    top:20vw;
+    top:9vh;
 }
 .board3{
     position: absolute;
     right: 31%;
-    top:25vw;
+    top:5vh;
+}
+
+.boardSlots{
+
 }
 
 .items {
@@ -73,13 +80,14 @@
     transition: all 0s;
     justify-content: space-around;
     width: 80vw;
-
+    max-width: 400px;
 }
 
 .item {
     border-radius:100%;
     animation : zoom-in-zoom-out 3s infinite;
-    height:15vw;
+    width: 20vw;
+    max-width: 80px;
     transition:all 0s;
 }
 
