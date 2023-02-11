@@ -6,7 +6,7 @@ function index(){
     return(
         <>  
             <section className='page'>
-                
+            <section className='texture'></section>
 
                 <section className='logo'>
                     <section className='topLogo'> 

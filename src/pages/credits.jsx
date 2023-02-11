@@ -6,6 +6,8 @@ function Credits(){
     return(
         <>
             <section className='page'>
+            <section className='texture'></section>
+
                 
                 <section className='titreCredits'>
                     <section className='titre'>Crédits</section>
@@ -15,7 +17,7 @@ function Credits(){
                 <section className='credits'>
                     <section className='backGround'>
                     </section>
-                    
+
                     <h3>ARC Production</h3>
                     <h3>MMI Bordeaux Montaigne & <br/> Musée des Beaux-Arts</h3>
 

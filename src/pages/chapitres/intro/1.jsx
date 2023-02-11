@@ -12,6 +12,8 @@ function Page2(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
                 <Guide contenu="Dirigez-vous vers le tableau “L’INCENDIE DU STEAMER AUSTRIA”"></Guide>
 
                 <section className='cadre'>
