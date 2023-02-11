@@ -68,7 +68,7 @@ function Page10() {
                 <div className='container'>
                     <p className='consigne'>
                         {clickedObject === "" &&
-                           "Appuyez sur les zones indiquées du tableau"}
+                           "Appuyez sur les zones indiquées du tableau. Utilisez le tableau réel pour vous aider"}
                         {clickedObject === "bateau" &&
                            "Mauvais objet, cherchez encore"}
                         {clickedObject === "hommes" &&
