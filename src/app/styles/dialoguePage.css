@@ -55,8 +55,6 @@ body{
     max-width: 350px;
 }
 
-.container-consigne{
-}
 
 .tableau{
     position: relative;
@@ -86,7 +84,7 @@ button{
     min-height: 3rem;
     font-family: 'Typewriter';
     background-size: cover;
-    margin-top: 3rem;
+    margin-top: 1rem;
     z-index: 3;
     color: black;
 }
