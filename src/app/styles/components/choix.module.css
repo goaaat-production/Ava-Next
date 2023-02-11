@@ -7,10 +7,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 0.5rem;    
+    position: relative;
+    top: 0;
 }
 
 .hidden{
-    display: none;
+    top: 50vh;
 }
 
 .reponseA{

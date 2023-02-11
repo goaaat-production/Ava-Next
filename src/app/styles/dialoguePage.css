@@ -111,6 +111,17 @@ a{
     /* height: 30rem; */
 }
 
-.hidden{
-    display: none;
+.pagePeindre{
+    position: absolute;
+    display: flex;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    justify-content: center;
+    backdrop-filter: brightness(0.5) blur(8px);
+}
+
+.pagePeindreHidden{
+    position: absolute;
+    top: 150vh;
 }

@@ -16,12 +16,18 @@ function PagePeindre() {
                 <div className={styles.drawboard } id='test'>
                     <ReactP5Wrapper sketch={sketch} /> 
                 </div>
-                <Choix shown={true}
-                    contenus="Valider"
-                    liens={[
-                        { href: "./[id]", as: "./5" },
-                    ]}
-                ></Choix>
+
+                <h2 className={styles.consigne}>Dessinez le portrait de Titien. Aidez vous du tableau</h2>
+
+                <div className={styles.bouton}>
+                    <Choix shown={true}
+                        contenus="Valider"
+                        liens={[
+                            { href: "./[id]", as: "./5" },
+                        ]}
+                    ></Choix>
+                </div>
+                
 
             </div>
         </>

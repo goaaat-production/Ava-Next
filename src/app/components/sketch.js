@@ -13,9 +13,9 @@ function sketch(p) {
         p.createCanvas(width,height );
         p.background('white');
         p.img = p.loadImage('/gomme.png');
-        p.button1 = p.createButton("Enregistrer sur l'appareil");
-        p.button1.position(width*0.75,height*0.1);
-        p.button1.mouseClicked(p.exporter);
+        // p.button1 = p.createButton("Enregistrer sur l'appareil");
+        // p.button1.position();
+        // p.button1.mouseClicked(p.exporter);
         p.c = "#000000";
         p.strokeWeight(10)    
     };
