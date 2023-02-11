@@ -13,6 +13,9 @@ function Credits(){
                 </section>
 
                 <section className='credits'>
+                    <section className='backGround'>
+                    </section>
+                    
                     <h3>ARC Production</h3>
                     <h3>MMI Bordeaux Montaigne & <br/> Musée des Beaux-Arts</h3>
 

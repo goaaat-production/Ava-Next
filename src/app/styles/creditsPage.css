@@ -76,15 +76,16 @@ p{
 }
 
 .credits{
-    background-color: #D9C5AD;
     padding: 2rem;
     color: black;
+    position: relative;
     
 }
 
 .creditPart{
     margin-top: 1rem;
     margin-left: 1rem;
+    
 }
 
 .boutonWrapper{
@@ -94,6 +95,7 @@ p{
 
 .titreCredits{
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .titre{
@@ -109,4 +111,15 @@ p{
     border-radius: 100%;
     top: -32px;
     left: -64px;
+}
+
+.backGround{
+    position: absolute;
+    background-color: #D9C5AD;
+    width: 100%;
+    height: 100%;
+    transform: rotate(3deg);
+    z-index: -1;
+    top: -4px;
+    left: -7px;
 }
