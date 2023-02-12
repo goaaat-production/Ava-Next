@@ -21,10 +21,16 @@
     max-width: 370px;
 }
 
+.boardSlots {
+    width: 100vw;
+    background-color: #fff;
+}
+
 .boardSlot {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 .boards > img {
     border: solid white 5px;
@@ -86,10 +92,6 @@
     position: absolute;
     right: 31%;
     top:5vh;
-}
-
-.boardSlots{
-
 }
 
 .items {

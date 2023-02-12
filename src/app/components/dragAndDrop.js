@@ -236,7 +236,6 @@ function DragAndDrop() {
                                     })}
                                 </div>
                             </div>
-
                             <div className = {styles.boardSlot}>
                                 <div id= "board2" className={`${styles.board2} ${(!Board2reussi? styles.Shaking : '')}`} ref={drop2} style={{
                                     backgroundColor: isOver2? "yellow" : "white",
@@ -245,9 +244,6 @@ function DragAndDrop() {
                                     opacity: IsFinish(board2)? '0%' : '40%'
                                 }} >   
                                     {board2.map((item) => {
-                                        const generatePreview = ({itemType, item, style}) => {
-                                            return <div style={style}> <img src={item.url}></img></div>
-                                        } 
                                         return <ItemsDND key={item.id} url={item.url} id={item.id} />
                                     })}
                                 </div>
@@ -261,24 +257,17 @@ function DragAndDrop() {
                                 }} >   
                                 
                                     {board3.map((item) => {
-                                            const generatePreview = ({itemType, item, style}) => {
-                                                return <div style={style}> <img src={item.url}></img></div>
-                                            } 
                                         return <ItemsDND  key={item.id} url={item.url} id={item.id} />
                                     })}
                                 </div>
                             </div>
-                    </div>
+                        </div>
                     <div className={styles.dialogue}>
                         {<Dialogue  setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>}
                     </div>
-                    
                 </div>
                 <div className={(ItemList.length >= 1 ? `${styles.items}` : `${styles.items} ${styles.hidden}`)}>
                     {ItemList.map((item) => {
-                        const generatePreview = ({itemType, item, style}) => {
-                            return <div style={style}> <img src={item.url}></img></div>
-                          } 
                         return <ItemsDND key={item.id} url={item.url} id={item.id} />
                     })}
                 </div>
