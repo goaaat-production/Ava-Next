@@ -3,7 +3,7 @@ import '../../../app/styles/outroPage.css'
 import { useState, useEffect } from 'react';
 
 
-function Page28() {
+function Page29() {
 
     let [isBlackout, setIsBlackout] = useState(true)
 
@@ -15,39 +15,38 @@ function Page28() {
 
     }, [])
 
-    const handleClick = () => {
-        setIsBlackout(true);
-        setTimeout(() => {
-            router.push('./6')
-        }, 500);
-    }
+    // const handleClick = () => {
+    //     setIsBlackout(true);
+    //     setTimeout(() => {
+    //         router.push('../../')
+    //     }, 500);
+    // }
+
 
     return (
         <>
             <section className="page">
-            <section className="texture"></section>
-
                 <section className={(isBlackout ? `${"blackout"}` : `${"blackoutHidden"}`)}></section>
 
                 <section className="texture"></section>
-                <div className='container2'>
+                <div className='container3'>
                     <div className='circle'></div>
-                    <p>Et l’incendie et ses victimes ne seront jamais oubliés. </p>
-
+                    <p className='final_text'>Si l’histoire ne peut être changée, elle peut être racontée par le biais de ces œuvres. <br /><br />Merci à vous qui prenez le temps de regarder toutes ces créations. </p>
                 </div>
-                <section className="boutons" onClick={handleClick}>
+
+                <section className="boutons">
                     <Choix shown={true}
-                        contenus="Suivant"
+                        contenus="Recommencer le jeu/Revenir au menu"
                         liens={[
-                            { href: "./[id]", as: "./6" },
+                            { href: "../intro/[id]", as: "../intro/1" },
+                            { href: "../../", as: "../../" },
                         ]}
                     ></Choix>
                 </section>
-                
             </section>
 
         </>
     )
 }
 
-export default Page28;
+export default Page29;

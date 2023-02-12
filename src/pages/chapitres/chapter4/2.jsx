@@ -17,6 +17,8 @@ function Page22(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
            <Header></Header>     
             <DndProvider backend={TouchBackend} >
                 <DragAndDrop/>

@@ -25,6 +25,8 @@ function Page18(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
                 <Header objet1={true} objet3={true}></Header>
                 <section className='dialogue'>
                     <section className='cadre'>

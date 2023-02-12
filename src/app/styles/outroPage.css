@@ -12,6 +12,11 @@ body{
     overflow: hidden;
     font-family: 'Typewriter';
     font-size: 18px;
+    color: white;
+}
+
+h2{
+    font-weight: lighter;
 }
 
 .page{
@@ -25,35 +30,7 @@ body{
     background-repeat: no-repeat;
     background-position-x: 15%;
     background-size: cover;
-}
 
-.hidden{
-    display: none;
-}
-
-.tableau{
-    position: relative;
-    transform: rotate(359deg);
-    height: 67vh;
-    top: -103px;
-    left: 5rem;
-}
-
-.cadre{
-    overflow: hidden;
-    position: relative;
-    width: 90vw;
-    max-width: 370px;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    transform: rotate(5deg);
-    border: solid;
-    border-width: 0.5rem;
-    border-color: white;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    box-shadow: 4px 16px 20px 8px rgb(0 0 0 / 51%);
 }
 
 button{
@@ -63,9 +40,9 @@ button{
     background-position: center;
     border-radius: 0%;
     border-width: 0;
-    /* margin-top: 5rem; */
     min-width: 5rem;
     min-height: 3rem;
+    margin-top: 1rem;
 }
 
 a{
@@ -76,6 +53,42 @@ a{
 
 }
 
+.container{
+    position: relative;
+    margin-top: 17rem;
+    margin-bottom: 1rem;
+}
+
+.container2{
+    position: relative;
+    margin: 17rem 2rem 0rem;
+}
+.container3{
+    position: relative;
+    margin: 10rem 2rem 1rem;
+}
+
+
+.final_text{
+    margin: 0rem 2rem ;
+}
+
+.circle{
+    height: 8rem;
+    width: 8rem;
+    background-color: #DC7753;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: -39%;
+    left: -8%;
+}
+
+.boutons{
+    margin-top: 2rem;
+}
+
 .texture{
     background-image: url("../../../public/texture.png");
     position: fixed;
@@ -84,4 +97,29 @@ a{
     mix-blend-mode: hard-light;
     z-index: -1;
     transition: none;
+    opacity: 75%;
+}
+
+.blackoutHidden{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: hard-light;
+    z-index: 8;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.blackout{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: hard-light;
+    z-index: 8;
+    opacity: 100;
+    pointer-events: none;
+    transition: all 0.5s;
 }

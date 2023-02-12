@@ -64,6 +64,7 @@
     position: relative;
     z-index: 1;
     left: -6rem;
+    max-width: 170px;
 }
 
 .rightHidden{

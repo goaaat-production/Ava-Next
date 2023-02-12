@@ -13,6 +13,8 @@ function Page12(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
                 <Guide contenu="Diriges toi vers la statue “Mozart Expirant”, elle pourra t’aider."></Guide>
 
                 <section className='cadre'>

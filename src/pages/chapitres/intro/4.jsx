@@ -15,6 +15,8 @@ function Page4(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
 
                 <Header></Header>
                 

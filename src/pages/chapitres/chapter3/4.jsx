@@ -13,6 +13,8 @@ function Page19(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
                 <PagePeinture/>
                 
 

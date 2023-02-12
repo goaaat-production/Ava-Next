@@ -1,0 +1,13 @@
+.page{
+    background-image: url('../../../../public/mozart-expirant.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    background-size: cover;
+}

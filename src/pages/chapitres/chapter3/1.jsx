@@ -15,6 +15,8 @@ function Page16(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
                 <Guide contenu="Dirigez-vous vers “CHARLES QUINT RAMASSANT LE PINCEAU DE TITIEN”, le capitaine en a besoin.."></Guide>
 
                 <section className='cadre'>

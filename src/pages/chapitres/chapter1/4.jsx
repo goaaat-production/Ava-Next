@@ -35,6 +35,8 @@ function Page10() {
     return (
         <>
             <section className="page" >
+            <section className='texture'></section>
+
                 <Header></Header>
                 <div className={styles.container}>
                     <img src='/embarquement-de-la-duchesse-dangouleme-a-pauillac.png' className='tableau' />

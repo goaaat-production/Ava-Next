@@ -25,8 +25,10 @@ function Page3(){
     return(
         <>  
             <section className="page">
-
+                <section className='texture'></section>
                 <Header></Header>
+
+                
 
                 <section className='dialogue'>
                     <section className='cadre'>

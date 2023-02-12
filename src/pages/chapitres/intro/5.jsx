@@ -15,6 +15,8 @@ function Page5(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
 
                 <Header></Header>
 
@@ -34,7 +36,7 @@ function Page5(){
                 
                 
                 <Choix shown={isLastPhrase}
-                    contenus="C'est d'accord/Si vous y tenez"
+                    contenus="Soit, allons-y !/D’accord, pas besoin de hausser le ton non plus..."
                     liens={[
                         { href: "../chapter1/[id]", as: "../chapter1/1" },
                         { href: "../chapter1/[id]", as: "../chapter1/1" },                        

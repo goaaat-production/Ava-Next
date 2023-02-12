@@ -14,6 +14,8 @@ function Page1(){
     return(
         <>  
             <section className="page">
+            <section className='texture'></section>
+
                 <Guide contenu="Diriges toi vers le tableau “EMBARQUEMENT DE LA DUCHESSE D’ANGOULÊME À PAUILLAC”"></Guide>
 
                 <section className='cadre'>

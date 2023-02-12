@@ -98,6 +98,7 @@
     justify-content: space-around;
     width: 80vw;
     max-width: 400px;
+    margin-top: 10rem;
 }
 
 .item {
@@ -113,7 +114,9 @@
 
 }
 .dialogue {
-    margin-top: 15vh;
+    margin-top: 30rem;
+    position: relative;
+    left: -100px;
 
 }
 
