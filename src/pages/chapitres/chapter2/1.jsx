@@ -15,7 +15,7 @@ function Page12(){
             <section className="page">
             <section className='texture'></section>
 
-                <Guide contenu="Dirigez-vous vers la statue “Mozart Expirant”, elle pourra t’aider."></Guide>
+                <Guide contenu="Dirigez-vous vers la statue “Mozart Expirant”, elle pourra vous aider."></Guide>
 
                 <section className='cadre'>
                     <img className="tableau" src='../../mozart-expirant.png' alt='Statue : Mozart Expirant'></img>

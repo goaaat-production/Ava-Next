@@ -48,7 +48,7 @@ function Page10() {
                 <div className="container">
                     {clickedObject === "" &&
                         <Dialogue setIsLastPhrase={vide} dialogue="
-                        :Capitaine : Trouve moi un objet qui
+                        :Capitaine : Trouve-moi un objet qui
                         pourrait secourir mes hommes.
                         "></Dialogue>}
                     {clickedObject === "bateau" &&

@@ -39,7 +39,7 @@ function Page3(){
                 </section>  
 
                 <Choix shown={isLastPhrase}
-                    contenus="Je vous regarde/Rien, je ne fait pas partie du navire..."
+                    contenus="Je vous regarde/Rien, je ne fais pas partie du navire..."
                     liens={[
                         { href: "./4", as: "./4" },
                         { href: "./4", as: "./4" },                        
