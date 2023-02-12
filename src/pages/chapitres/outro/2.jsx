@@ -36,7 +36,6 @@ function Page25() {
                     <p className="outro_phrase">J’ai survécu à la révolution, et je m’en vais à l’arrivée du général de Napoléon.</p>
                 </div>
                 <div className='animation'>
-
                     <img class="opacity_duch" src="../../duchesse_mask.png"></img>
                 </div>
 

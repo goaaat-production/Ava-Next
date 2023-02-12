@@ -61,6 +61,19 @@ body{
     filter: blur(3px);
 }
 
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../../../public/lincendie-du-steamer-austria.png");
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-position-x: 15%;
+  background-size: cover;
+
+}
 
 .path{
         stroke-dasharray: 1900;
