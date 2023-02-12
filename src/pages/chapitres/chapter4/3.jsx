@@ -5,13 +5,24 @@ import '../../../app/styles/dialoguePage.css'
 import Guide from '../../../app/components/Guides'
 import Choix from '../../../app/components/Choix'
 import Header from '../../../app/components/HeaderObjets'
+import { useRouter } from 'next/router'
+
 
 
 
 function Page23(){
+    const router = useRouter()
 
     let [isLastPhrase, setIsLastPhrase] = useState(false);
     let [prenom, setPrenom] = useState("prénom");
+    let [isBlackout, setIsBlackout] = useState(false)
+
+    const handleClick = () => {
+        setIsBlackout(true);
+        setTimeout(() => {
+            router.push('../outro/1')
+        }, 500);
+    }
 
 
     useEffect(() => {
@@ -25,6 +36,8 @@ function Page23(){
         <>  
             <section className="page">
             <section className='texture'></section>
+            <section className={(isBlackout ? `${"blackout"}` : `${"blackoutHidden"}`)}></section>
+
 
                 <Header></Header>
                 <section className='dialogue'>
@@ -36,12 +49,9 @@ function Page23(){
                 </section>
                 
 
-                <Choix shown={isLastPhrase}
-                    contenus="Suivant"
-                    liens={[
-                        { href: "../outro/[id]", as: "../outro/1" },
-                        ]}   
-                ></Choix>
+                <section className={(isLastPhrase ? "wrapper-form" : `${"wrapper-form"} ${"hidden"}`)}>
+                    <button onClick={handleClick}>Merci Capitaine !</button>
+                </section>
 
             </section>
             
