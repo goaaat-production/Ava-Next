@@ -6,8 +6,12 @@
 
 .preview{
     z-index: 3;
+    transition: all 0.1s;
 }
 
+.preview > img{
+    width:25vw;
+}
 .boards {
     display:flex;
     align-items: center;
@@ -16,6 +20,13 @@
     height: 40vh;
     max-width: 370px;
 }
+
+.boardSlots {
+    width: 100vw;
+    background-color: #fff;
+}
+
+
 .boards > img {
     border: solid white 5px;
     transform: rotate(-5deg);
@@ -25,6 +36,7 @@
     position: absolute;
 }
 .board1, .board2, .board3 {
+    background: none;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -32,14 +44,20 @@
     max-width: 62px;
     height: 15vw;
     max-height: 62px;
-    background-color: rgba(255,255,255,40%);
+    border: dashed 2px white;
     border-radius: 50%;
-
     /* animation: blinker 2s linear infinite; */
 }
 @keyframes blinker {
+    0% {
+        opacity:40%;
+    }
     50% {
-      opacity: 0;
+      opacity: 100%;
+    }
+
+    100%{
+        opacity:40%;
     }
 }
 
@@ -55,26 +73,31 @@
     }
   }
 
-.board1{
+.boardSlot1{
     position: absolute;
-    left: 1.5%;
-    top:16vh;
+    left: -5%;
+    top:11vh;
 }
-.board2{
+.boardSlot2{
     position: absolute;
-    left: 30%;
-    top:9vh;
+    left: 23%;
+    top:3vh;
 }
-.board3{
+.boardSlot3{
     position: absolute;
-    right: 31%;
+    right: 20%;
     top:5vh;
 }
 
-.boardSlots{
+.boardSlot1, .boardSlot2, .boardSlot3 {
+    width:30vw;
+    height:30vw;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 
 }
-
 .items {
     display:flex;
     transition: all 0s;
