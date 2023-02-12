@@ -35,7 +35,7 @@ function Page3(){
                         <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
                     </section>
 
-                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : "+ prenom + " ? Original.../ :Capitaine : Qu'est-ce que tu fait là ?"}></Dialogue>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Capitaine : "+ prenom + " ? Original.../ :Capitaine : Qu'est-ce que tu fais là ?"}></Dialogue>
                 </section>  
 
                 <Choix shown={isLastPhrase}

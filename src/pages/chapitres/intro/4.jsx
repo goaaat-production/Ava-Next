@@ -32,7 +32,7 @@ function Page4(){
                 </section>
                 
                 <Choix shown={isLastPhrase}
-                    contenus="J’accepte !/J'ai la flemme un peu..."
+                    contenus="J’accepte !/J'ai un peu la flemme..."
                     liens={[
                         { href: "../chapter1/1", as: "../chapter1/1" },
                         { href: "./5", as: "./5" },                        
