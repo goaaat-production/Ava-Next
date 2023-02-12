@@ -29,7 +29,7 @@ function Page5(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : J’en ai rien à faire !/
 
-                    :Capitaine : dirige toi vers les tableaux ! VITE !
+                    :Capitaine : Dirige toi vers les tableaux ! VITE !
                     "></Dialogue>
                 </section>
 

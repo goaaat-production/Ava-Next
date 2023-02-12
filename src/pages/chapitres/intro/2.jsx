@@ -43,11 +43,11 @@ function Page3(){
 
                         :Capitaine : Il nous faudrait plus de monde pour nous aider !!! /
 
-                        :Capitaine : Vous là bas !/
+                        :Capitaine : Toi là-bas !/
 
-                        :Capitaine : Vous !!!/
+                        :Capitaine : Toi !!!/
 
-                        :Capitaine : C'est quoi votre nom ?
+                        :Capitaine : C'est quoi ton nom ?
                     "></Dialogue>
                 </section>
 
