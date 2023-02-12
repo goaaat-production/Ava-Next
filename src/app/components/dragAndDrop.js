@@ -83,7 +83,7 @@ function DragAndDrop() {
 
     const gagné = () =>{
         console.log('Vous avez gagné')
-        router.push('./3')    
+        // router.push('./3')    
     }
 
 
@@ -113,7 +113,7 @@ function DragAndDrop() {
         else if (itemId === 0 & boardId !== 2){
             return(
             ":Capitaine : Non pas là ! Le ruban doit pouvoir récuperer des gens")
-        }
+        }        
     }
     
 
@@ -256,10 +256,12 @@ function DragAndDrop() {
                                 })}
                         </div>
                     </div>
-                    
+                    <div className={styles.dialogue}>
+                        {<Dialogue  setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>}
+                    </div>
                     
                 </div>
-                <div className={styles.items}>
+                <div className={(ItemList.length >= 1 ? `${styles.items}` : `${styles.items} ${styles.hidden}`)}>
                     {ItemList.map((item) => {
                         const generatePreview = ({itemType, item, style}) => {
                             return <div style={style}> <img src={item.url}></img></div>
@@ -267,15 +269,19 @@ function DragAndDrop() {
                         return <ItemsDND key={item.id} url={item.url} id={item.id} />
                     })}
                 </div>
+                <Choix shown={ItemList.length <= 0}
+                    contenus="Vous êtes sauvés !"
+                    liens={[
+                        { href: "./[id]", as: "./3" },                        
+                        ]}                                
+                ></Choix>
 
                 <div>
                     {
                         (NombreObjet === 3 ? gagné() : null)
                     }
                 </div>
-                <div className={styles.dialogue}>
-                    {<Dialogue  setIsLastPhrase={setIsLastPhrase}   dialogue= {DialogueCap}></Dialogue>}
-                </div>
+                
             </div>
 
 
