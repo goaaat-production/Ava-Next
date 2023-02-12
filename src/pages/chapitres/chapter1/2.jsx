@@ -28,7 +28,7 @@ function Page7(){
                 <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : Des gens sont tombés à l'eau... Il faut récuperer de quoi les secourir./
 
-                    :Capitaine : Demande à la duchesse si elle a de quoi nous aider/ 
+                    :Capitaine : Demande à la duchesse si elle a de quoi nous aider./ 
 
                     :Duchesse : Plait-il ?
                 "></Dialogue>
