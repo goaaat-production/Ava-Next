@@ -33,8 +33,8 @@ function Page17(){
                 <Choix shown={isLastPhrase}
                     contenus="Je sais pas ce que c’est un spazzola mais... oui ?/Oui ma foi, le capitaine a besoin d’un pinceau."
                     liens={[
-                        { href: "./[id]", as: "./3" },
-                        { href: "./[id]", as: "./3" },
+                        { href: "./3", as: "./3" },
+                        { href: "./3", as: "./3" },
                         ]}                     
                 ></Choix>
             </section>

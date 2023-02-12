@@ -23,7 +23,7 @@ function PagePeindre() {
                     <Choix shown={true}
                         contenus="Valider"
                         liens={[
-                            { href: "./[id]", as: "./5" },
+                            { href: "./5", as: "./5" },
                         ]}
                     ></Choix>
                 </div>

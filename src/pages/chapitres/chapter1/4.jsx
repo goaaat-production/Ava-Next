@@ -84,7 +84,7 @@ function Page10() {
                     <Choix shown={isLastPhrase}
                         contenus="Suivant"
                         liens={[
-                            { href: "./[id]", as: "./5" },
+                            { href: "./5", as: "./5" },
                         ]}
                     ></Choix>
                 }

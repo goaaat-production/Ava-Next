@@ -45,7 +45,7 @@ function Page25() {
                     <Choix shown={true}
                         contenus="Suivant"
                         liens={[
-                            { href: "./[id]", as: "./3" },
+                            { href: "./3", as: "./3" },
                         ]}
                     ></Choix>
                 </section>

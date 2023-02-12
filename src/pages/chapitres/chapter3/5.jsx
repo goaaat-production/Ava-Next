@@ -41,7 +41,7 @@ function Page20(){
                 <Choix shown={isLastPhrase}
                     contenus="J'y vais"
                     liens={[
-                        { href: "../chapter4/[id]", as: "../chapter4/1" },
+                        { href: "../chapter4/1", as: "../chapter4/1" },
                         ]}                     
                 ></Choix>
             </section>

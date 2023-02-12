@@ -37,7 +37,7 @@ function Page11(){
                 <Choix shown={isLastPhrase}
                     contenus="Cherchons Mozart"
                     liens={[
-                        { href: "../chapter2/[id]", as: "../chapter2/1" },
+                        { href: "../chapter2/1", as: "../chapter2/1" },
                         ]}                      
                 ></Choix>
             </section>
