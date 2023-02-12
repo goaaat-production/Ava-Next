@@ -8,19 +8,17 @@
 }
 
 .fill{
-    width: 40%;
+    width: 0;
 }
 
 .objetsWrapper{
     display: flex;
-    justify-content: space-evenly;
-    max-width: 396px;
-    margin-left: 30%;
+    justify-content: center;
 }
 
 .objets{
-    height: 3rem;
-    width: 5rem;
+    height: 50px;
+    width: 50px;
     border-radius: 100px;
     border-style: dashed;
     border-width: 3px;
@@ -30,8 +28,8 @@
 }
 
 .objet1{
-    height: 3rem;
-    width: 5rem;
+    height: 50px;
+    width: 50px;
     margin-top: 1rem;
     background-image: url('../../../../public/objet1.png');
     background-position: center;
@@ -40,8 +38,8 @@
 }
 
 .objet2{
-    height: 3rem;
-    width: 5rem;
+    height: 50px;
+    width: 50px;
     margin-top: 1rem;
     background-image: url('../../../../public/objet2.png');
     background-position: center;
@@ -51,8 +49,8 @@
 }
 
 .objet3{
-    height: 3rem;
-    width: 5rem;
+    height: 50px;
+    width: 50px;
     margin-top: 1rem;
     background-image: url('../../../../public/objet3.png');
     background-position: center;
