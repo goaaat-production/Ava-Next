@@ -34,8 +34,8 @@ function Page4(){
                 <Choix shown={isLastPhrase}
                     contenus="J’accepte !/J'ai la flemme un peu..."
                     liens={[
-                        { href: "../chapter1/[id]", as: "../chapter1/1" },
-                        { href: "./[id]", as: "./5" },                        
+                        { href: "../chapter1/1", as: "../chapter1/1" },
+                        { href: "./5", as: "./5" },                        
                         ]}                  
                 ></Choix>
 

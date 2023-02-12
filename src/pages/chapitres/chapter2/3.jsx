@@ -35,8 +35,8 @@ function Page14(){
                 <Choix shown={isLastPhrase}
                     contenus="10 comme tout le monde !?/Oooh il en manque 2, vous en avez plus que 8..."
                     liens={[
-                        { href: "./[id]", as: "./4-1" },
-                        { href: "./[id]", as: "./4-2" },
+                        { href: "./4-1", as: "./4-1" },
+                        { href: "./4-2", as: "./4-2" },
                         ]}                    
                 ></Choix>
             </section>

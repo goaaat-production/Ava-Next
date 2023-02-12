@@ -37,7 +37,7 @@ function Page9(){
                 <Choix shown={isLastPhrase}
                     contenus="Cherchons le"
                     liens={[
-                        { href: "./[id]", as: "./4" },
+                        { href: "./4", as: "./4" },
                         ]}                      
                 ></Choix>
             </section>

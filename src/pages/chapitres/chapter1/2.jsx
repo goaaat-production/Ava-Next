@@ -37,8 +37,8 @@ function Page7(){
                 <Choix shown={isLastPhrase}
                     contenus="Hey, un bateau coule en face ! Aidez-moi !!/Bonjour, le bateau du capitaine prend feu. J’ai besoin de votre aide."
                     liens={[
-                        { href: "./[id]", as: "./3-1" },
-                        { href: "./[id]", as: "./3-2" },                        
+                        { href: "./3-1", as: "./3-1" },
+                        { href: "./3-2", as: "./3-2" },                        
                         ]}                      
                 ></Choix>
             </section>

@@ -41,8 +41,8 @@ function Page3(){
                 <Choix shown={isLastPhrase}
                     contenus="Je vous regarde/Rien, je ne fait pas partie du navire..."
                     liens={[
-                        { href: "./[id]", as: "./4" },
-                        { href: "./[id]", as: "./4" },                        
+                        { href: "./4", as: "./4" },
+                        { href: "./4", as: "./4" },                        
                         ]}                    
                 ></Choix>
             </section>

@@ -41,7 +41,7 @@ function Page26() {
                     <Choix shown={true}
                             contenus="Suivant"
                             liens={[
-                                { href: "./[id]", as: "./4" },
+                                { href: "./4", as: "./4" },
                                 ]}   
                         ></Choix>
                 </section>

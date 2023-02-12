@@ -274,7 +274,7 @@ function DragAndDrop() {
                 <Choix shown={ItemList.length <= 0}
                     contenus="Vous êtes sauvés !"
                     liens={[
-                        { href: "./[id]", as: "./3" },                        
+                        { href: "./3", as: "./3" },                        
                         ]}                                
                 ></Choix>
 

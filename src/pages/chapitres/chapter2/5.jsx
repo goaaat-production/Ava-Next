@@ -33,7 +33,7 @@ function Page15(){
                 <Choix shown={isLastPhrase}
                     contenus="Merci Mozart"
                     liens={[
-                        { href: "./[id]", as: "./6" },
+                        { href: "./6", as: "./6" },
                         ]}                   
                 ></Choix>
             </section>

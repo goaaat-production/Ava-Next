@@ -38,7 +38,7 @@ function Page29() {
                     <Choix shown={true}
                         contenus="Recommencer le jeu/Revenir au menu"
                         liens={[
-                            { href: "../intro/[id]", as: "../intro/1" },
+                            { href: "../intro/1", as: "../intro/1" },
                             { href: "../../", as: "../../" },
                         ]}
                     ></Choix>
