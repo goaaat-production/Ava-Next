@@ -7,9 +7,12 @@ function Page24() {
     return (
         <>
             <section className="page">
+            <section className="texture"></section>
                 <div className='container'>
                 <div className='circle'></div>
+                <div className='text'>
                 <p>Dans un monde fictif, l’histoire <br/>peut être réécrite ou inventée.</p>
+                </div>
                 </div>
                 
             <section className="boutons">
