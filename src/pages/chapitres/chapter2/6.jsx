@@ -25,7 +25,7 @@ function Page15(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : Tu as le fauteuil ? C'est parfait !/
 
-                    :Capitaine : ça fera un très bon contrepoids/
+                    :Capitaine : Ça fera un très bon contrepoids./
 
                     :Matelot : CAPITAINE !!! La passerelle est en feu !/
 

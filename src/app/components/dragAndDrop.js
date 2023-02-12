@@ -91,7 +91,7 @@ function DragAndDrop() {
     function DialogueCapitaine(itemId, boardId) {
         if (itemId === 2 & boardId === 1) {
             return (
-                ":Capitaine : Oui le siège de mozart fait un parfait contrepoid pour redresser le navire. ")
+                ":Capitaine : Oui le siège de Mozart fait un parfait contrepoid pour redresser le navire. ")
         }
         else if (itemId === 0 & boardId === 2) {
             return (
@@ -105,7 +105,7 @@ function DragAndDrop() {
 
         else if (itemId === 2 & boardId !== 1) {
             return (
-                ":Capitaine : Noon ! On a besoin de poid à tribord !  ")
+                ":Capitaine : Noon ! On a besoin de poids à tribord !  ")
         }
         else if (itemId === 1 & boardId !== 3) {
             return (

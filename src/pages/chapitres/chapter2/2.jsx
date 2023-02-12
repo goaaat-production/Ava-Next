@@ -25,7 +25,7 @@ function Page13(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Capitaine : C'est Mozart... On a besoin de son fauteuil.../
 
-                    :Mozart : Que voulez vous ?
+                    :Mozart : Que voulez-vous ?
                 "></Dialogue>
                 </section>
                 

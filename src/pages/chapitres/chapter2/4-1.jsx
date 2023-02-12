@@ -25,7 +25,8 @@ function Page14(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Mozart : 10... si seulement.../
 
-                    :Mozart : Mais, puisque vous êtes là, vous pouvez écrire ma symphonie, ça commence comme ça...
+                    :Mozart : Mais, puisque vous êtes là, vous pouvez écrire ma symphonie, ça commence comme ça 
+                    🎵 ta ta ta taaaa 🎵...
                 "></Dialogue>
                 </section>
                 

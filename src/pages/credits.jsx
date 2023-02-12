@@ -53,7 +53,7 @@ function Credits(){
                         <h4>Sound Design</h4>
                         <p>
                             Anaïs Delavier<br/>
-                            Cleo Lafargue
+                            Cléo Laffargue
                         </p>
                     </section>
 
