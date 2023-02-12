@@ -59,7 +59,7 @@ body{
 .tableau{
     position: relative;
     transform: rotate(-5deg);
-    width: 76vw;
+    width: 90vw;
     height: 27vh;
     max-width: 370px;
     object-fit: cover;
