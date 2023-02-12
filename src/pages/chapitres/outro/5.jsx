@@ -25,6 +25,8 @@ function Page28() {
     return (
         <>
             <section className="page">
+            <section className="texture"></section>
+
                 <section className={(isBlackout ? `${"blackout"}` : `${"blackoutHidden"}`)}></section>
 
                 <section className="texture"></section>

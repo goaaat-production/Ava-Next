@@ -27,6 +27,8 @@ function Page26() {
         <>
 
             <section className={styles.page}>
+            <section className="texture"></section>
+
                 <section className={(isBlackout ? `${"blackout"}` : `${"blackoutHidden"}`)}></section>
 
                 <div className='container'>

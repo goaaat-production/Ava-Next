@@ -34,6 +34,17 @@ body{
     color: white;
 }
 
+.texture{
+  background-image: url("../../../public/texture.png");
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: hard-light;
+  z-index: -1;
+  transition: none;
+  opacity: 70%;
+}
+
 .circle{
     height: 8rem;
     width: 8rem;
@@ -44,6 +55,10 @@ body{
     position: absolute;
     top: -39%;
     left: -8%;
+}
+
+.outro_phrase{
+  max-width: 350px;
 }
 
 .container{

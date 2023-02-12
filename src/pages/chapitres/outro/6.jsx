@@ -36,17 +36,9 @@ function Page29() {
 
                 <section className="boutons">
                     <Choix shown={true}
-                        contenus="Recommencer le jeu"
+                        contenus="Recommencer le jeu/Revenir au menu"
                         liens={[
                             { href: "../intro/[id]", as: "../intro/1" },
-                        ]}
-                    ></Choix>
-                </section>
-                
-                <section className="boutons">
-                    <Choix shown={true}
-                        contenus="Revenir au menu"
-                        liens={[
                             { href: "../../", as: "../../" },
                         ]}
                     ></Choix>
