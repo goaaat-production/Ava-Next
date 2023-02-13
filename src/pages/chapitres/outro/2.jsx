@@ -35,7 +35,7 @@ function Page25() {
 
                 <div className='container'>
                     <div className='circle'></div>
-                    <p className="outro_phrase">J’ai survécu à la Révolution, et je m’en vais à l’arrivée du général de Napoléon.</p>
+                    <p className="outro_phrase">J’ai survécu à la Révolution, et je m’en vais à l’arrivée du général Napoléon.</p>
                 </div>
 
                 <div className="animation">

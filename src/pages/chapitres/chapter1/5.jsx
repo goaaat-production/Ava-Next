@@ -29,7 +29,7 @@ function Page11(){
 
                     :Matelot : MON CAPITAINE ! On coule à bâbord !/
                     
-                    :Capitaine : Vite ! On a besoin de contrepoids ! Va voir la statue là-bas, c’est grand et lourd.
+                    :Capitaine : Vite ! On a besoin d'un contrepoids ! Va voir la statue là-bas, c’est grand et lourd.
                 "></Dialogue>
                 </section>
                 
