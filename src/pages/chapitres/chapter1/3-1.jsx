@@ -31,7 +31,7 @@ function Page8(){
                     <section className='cadre'>
                         <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse d angouleme a pauillac'></img>
                     </section>
-                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Duchesse : C’est à moi que vous parlez de la sorte ? Savez-vous qui je suis ?/ :Capitaine : Je vous pris de l’excuser madame !/ :Capitaine : "+ (prenom ? prenom : "prenom") +", vas-y avec des pincettes, c’est la fille de Louis XVI.../ :Capitaine : Il nous faut un objet qui pourrait secourir mes hommes..."}></Dialogue>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Duchesse : C’est à moi que vous parlez de la sorte ? Savez-vous qui je suis ?/ :Capitaine : Je vous prie de l’excuser madame !/ :Capitaine : "+ (prenom ? prenom : "prenom") +", vas-y avec des pincettes, c’est la fille de Louis XVI.../ :Capitaine : Il nous faut un objet qui pourrait secourir mes hommes..."}></Dialogue>
                 </section>
                 <Choix shown={isLastPhrase}
                     contenus="Cherchons le"

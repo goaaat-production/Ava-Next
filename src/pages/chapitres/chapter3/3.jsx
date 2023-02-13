@@ -32,7 +32,7 @@ function Page18(){
                     <section className='cadre'>
                         <img className="tableau" src='../../charles-quint-ramassant-le-pinceau-de-titien.png' alt='Statue : Mozart Expirant'></img>
                     </section>
-                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : Mon pinceau se mérite !/ :Titien : Je n’accepterai de le céder qu’à celui qui réalisera le plus beau tableau de moi./ :Capitaine : À toi de jouer " + prenom + " montre lui tes talents de de peintre !/ :Capitaine : A toi de jouer !"}></Dialogue>
+                    <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Titien : Mon pinceau se mérite !/ :Titien : Je n’accepterai de le céder qu’à celui qui réalisera le plus beau tableau de moi./ :Capitaine : À toi de jouer " + prenom + " montre lui tes talents de peintre !/ :Capitaine : À toi de jouer !"}></Dialogue>
                 
                 </section>
 

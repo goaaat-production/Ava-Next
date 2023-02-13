@@ -17,7 +17,7 @@ function PagePeindre() {
                     <ReactP5Wrapper sketch={sketch} /> 
                 </div>
 
-                <h2 className={styles.consigne}>Dessinez le portrait de Titien. Aidez vous du tableau</h2>
+                <h2 className={styles.consigne}>Dessinez le portrait de Titien. Aidez-vous du tableau</h2>
 
                 <div className={styles.bouton}>
                     <Choix shown={true}
