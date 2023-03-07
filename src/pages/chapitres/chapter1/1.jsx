@@ -19,7 +19,7 @@ function Page1(){
                 <Guide contenu="Dirigez-vous vers le tableau “EMBARQUEMENT DE LA DUCHESSE D’ANGOULÊME À PAUILLAC”"></Guide>
 
                 <section className='cadre'>
-                    <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : incendie-du-steamer-austria'></img>
+                    <img className="tableau" src='../../embarquement-de-la-duchesse-dangouleme-a-pauillac.png' alt='Tableau : embarquement de la duchesse'></img>
                 </section>
                 
                 <Choix shown={true}
