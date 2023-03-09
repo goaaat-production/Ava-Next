@@ -62,7 +62,7 @@ function Page10() {
                     }
                     {clickedObject === "ruban" &&
                         <Dialogue setIsLastPhrase={setIsLastPhrase} dialogue="
-                        :Duchesse : Judicieux choix ! Les naufragés sont peints de petite taille, mon bandeau suffira largement.../ :Duchesse : Edgar, passez donc ce bandeau à notre ami !"></Dialogue>
+                        :Duchesse : Judicieux choix ! Les naufragés sont peints de petite taille, mon bandeau suffira largement..."></Dialogue>
                     }
                 </div>
 

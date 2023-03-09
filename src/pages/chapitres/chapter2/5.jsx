@@ -25,7 +25,7 @@ function Page15(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Mozart : Très bien, très bien, j'arrête.../
 
-                    :Mozart : Aller, prenez mon fauteuil, mais je reste dessus, vous avez gagné le gros lot !
+                    :Mozart : Allez, prenez mon fauteuil, mais je reste dessus, vous avez gagné le gros lot !
                 "></Dialogue>
                 </section>
                 

@@ -25,7 +25,7 @@ function Page4(){
                         <img className="tableau" src='../../lincendie-du-steamer-austria.png' alt='Tableau : incendie-du-steamer-austria'></img>
                     </section>
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
-                        :Capitaine : Alors aide nous plutôt !/ 
+                        :Capitaine : Alors aide-nous plutôt !/ 
 
                         :Capitaine : Va chercher de quoi nous secourir chez les autres tableaux.
                     "></Dialogue>

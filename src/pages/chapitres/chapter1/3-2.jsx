@@ -25,7 +25,7 @@ function Page9(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue="
                     :Duchesse : Oh non, vous coulez ? Mais quelle tragédie !/
                     
-                    :Duchesse : Je ne comprends pas, la mer jusqu’à l'Amérique est pourtant si paisible !/
+                    :Duchesse : Je ne comprends pas, la mer jusqu’aux Amériques est pourtant si paisible !/
                     
                     :Duchesse : Comment puis-je vous aider ?/
 
@@ -35,7 +35,7 @@ function Page9(){
                 
                 
                 <Choix shown={isLastPhrase}
-                    contenus="Cherchons le"
+                    contenus="Cherchons-le"
                     liens={[
                         { href: "./4", as: "./4" },
                         ]}                      
