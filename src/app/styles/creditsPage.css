@@ -77,11 +77,13 @@ h4{
     font-size: 16px;
     font-weight: lighter;
     margin-bottom: 0.2rem;
+    text-align: center;
 }
 
 p{
     margin: 0;
     font-size: 13px;
+    text-align: center;
 }
 
 .credits{
@@ -92,9 +94,7 @@ p{
 }
 
 .creditPart{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    
+    margin-top: 1rem;    
 }
 
 .boutonWrapper{
@@ -144,4 +144,13 @@ p{
     mix-blend-mode: hard-light;
     z-index: -1;
     transition: none;
+}
+
+.musba{
+    width: 100%;
+    height: 5rem;
+    background-image: url("../../../public/BACCHANIGHT_BLOC-MARQUE_V1.1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
