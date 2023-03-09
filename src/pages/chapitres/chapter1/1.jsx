@@ -23,7 +23,7 @@ function Page1(){
                 </section>
                 
                 <Choix shown={true}
-                    contenus="J'y suis."
+                    contenus="J'y suis"
                     liens={[
                         { href: "./2", as: "./2" },
                         ]}                         

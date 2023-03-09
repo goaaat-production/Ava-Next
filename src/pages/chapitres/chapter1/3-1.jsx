@@ -34,7 +34,7 @@ function Page8(){
                     <Dialogue setIsLastPhrase={setIsLastPhrase}   dialogue={":Duchesse : C’est à moi que vous parlez de la sorte ? Savez-vous qui je suis ?/ :Capitaine : Je vous prie de l’excuser madame !/ :Capitaine : "+ (prenom ? prenom : "prenom") +", vas-y avec des pincettes, c’est la fille de Louis XVI.../ :Capitaine : Il nous faut un objet qui pourrait secourir mes hommes..."}></Dialogue>
                 </section>
                 <Choix shown={isLastPhrase}
-                    contenus="Cherchons le"
+                    contenus="Cherchons-le"
                     liens={[
                         { href: "./4", as: "./4" },                       
                         ]}                      

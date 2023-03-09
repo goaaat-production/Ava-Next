@@ -31,7 +31,7 @@ function Page13(){
                 
                 
                 <Choix shown={isLastPhrase}
-                    contenus="Je peux vous emprunter votre fauteuil ?/Le capitaine a dit que vous étiez lourd"
+                    contenus="Je peux vous emprunter votre fauteuil ?/Le capitaine a dit que vous étiez lourd."
                     liens={[
                         { href: "./3", as: "./3" },
                         { href: "./3", as: "./3" },
