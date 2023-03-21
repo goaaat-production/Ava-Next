@@ -34,6 +34,7 @@
     background-image: url('../../../../public/objet1.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 1rem;
 }
 
@@ -44,6 +45,7 @@
     background-image: url('../../../../public/objet2.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 1rem;
 
 }
@@ -55,6 +57,7 @@
     background-image: url('../../../../public/objet3.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 1rem;
 
 }
